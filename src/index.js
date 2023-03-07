@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const cors  = require('cors');
 const morgan = require('morgan');
+const cricketRouter = require('./controllers/cricket-controller');
+
 
 const app = express();
 //middlewares
@@ -13,6 +15,7 @@ app.use('/data/cricket/player-stats',express.static(path.resolve(__dirname, 'ass
 
 
 //routes
+app.use('/cricket', cricketRouter);
 
 app.get('/', (req, res) => {
   res.send('Hello World!')

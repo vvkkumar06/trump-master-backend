@@ -1,4 +1,4 @@
-[
+const allCricketPlayers = [
   {
     "PlayerId": "57",
     "PlayerName": "MS Dhoni",
@@ -30,7 +30,7 @@
     "Catches": "135",
     "Stumpings": "39",
     "TMID": 1,
-    "Image": "./../../assets/cricket/images/players/1.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1.png"
   },
   {
     "PlayerId": "13",
@@ -63,7 +63,7 @@
     "Catches": "133",
     "Stumpings": "34",
     "TMID": 2,
-    "Image": "./../../assets/cricket/images/players/102.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/102.png"
   },
   {
     "PlayerId": "6",
@@ -96,7 +96,7 @@
     "Catches": "97",
     "Stumpings": "0",
     "TMID": 3,
-    "Image": "./../../assets/cricket/images/players/107.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/107.png"
   },
   {
     "PlayerId": "2",
@@ -129,7 +129,7 @@
     "Catches": "94",
     "Stumpings": "0",
     "TMID": 4,
-    "Image": "./../../assets/cricket/images/players/164.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/164.png"
   },
   {
     "PlayerId": "46",
@@ -162,7 +162,7 @@
     "Catches": "88",
     "Stumpings": "0",
     "TMID": 5,
-    "Image": "./../../assets/cricket/images/players/9.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/9.png"
   },
   {
     "PlayerId": "11",
@@ -195,7 +195,7 @@
     "Catches": "95",
     "Stumpings": "0",
     "TMID": 6,
-    "Image": "./../../assets/cricket/images/players/41.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/41.png"
   },
   {
     "PlayerId": "106",
@@ -228,7 +228,7 @@
     "Catches": "108",
     "Stumpings": "0",
     "TMID": 7,
-    "Image": "./../../assets/cricket/images/players/14.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/14.png"
   },
   {
     "PlayerId": "153",
@@ -261,7 +261,7 @@
     "Catches": "92",
     "Stumpings": "32",
     "TMID": 8,
-    "Image": "./../../assets/cricket/images/players/127.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/127.png"
   },
   {
     "PlayerId": "166",
@@ -294,7 +294,7 @@
     "Catches": "103",
     "Stumpings": "0",
     "TMID": 9,
-    "Image": "./../../assets/cricket/images/players/210.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/210.png"
   },
   {
     "PlayerId": "60",
@@ -327,7 +327,7 @@
     "Catches": "62",
     "Stumpings": "2",
     "TMID": 10,
-    "Image": "./../../assets/cricket/images/players/100.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/100.png"
   },
   {
     "PlayerId": "45",
@@ -360,7 +360,7 @@
     "Catches": "42",
     "Stumpings": "0",
     "TMID": 11,
-    "Image": "./../../assets/cricket/images/players/8.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/8.png"
   },
   {
     "PlayerId": "198",
@@ -393,7 +393,7 @@
     "Catches": "118",
     "Stumpings": "8",
     "TMID": 12,
-    "Image": "./../../assets/cricket/images/players/233.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/233.png"
   },
   {
     "PlayerId": "226",
@@ -426,7 +426,7 @@
     "Catches": "43",
     "Stumpings": "0",
     "TMID": 13,
-    "Image": "./../../assets/cricket/images/players/96.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/96.png"
   },
   {
     "PlayerId": "95",
@@ -459,7 +459,7 @@
     "Catches": "49",
     "Stumpings": "0",
     "TMID": 14,
-    "Image": "./../../assets/cricket/images/players/103.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/103.png"
   },
   {
     "PlayerId": "214",
@@ -492,7 +492,7 @@
     "Catches": "71",
     "Stumpings": "0",
     "TMID": 15,
-    "Image": "./../../assets/cricket/images/players/170.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/170.png"
   },
   {
     "PlayerId": "93",
@@ -525,7 +525,7 @@
     "Catches": "80",
     "Stumpings": "0",
     "TMID": 16,
-    "Image": "./../../assets/cricket/images/players/25.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/25.png"
   },
   {
     "PlayerId": "16",
@@ -558,7 +558,7 @@
     "Catches": "79",
     "Stumpings": "0",
     "TMID": 17,
-    "Image": "./../../assets/cricket/images/players/123.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/123.png"
   },
   {
     "PlayerId": "149",
@@ -591,7 +591,7 @@
     "Catches": "40",
     "Stumpings": "0",
     "TMID": 18,
-    "Image": "./../../assets/cricket/images/players/76.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/76.png"
   },
   {
     "PlayerId": "44",
@@ -624,7 +624,7 @@
     "Catches": "62",
     "Stumpings": "0",
     "TMID": 19,
-    "Image": "./../../assets/cricket/images/players/135.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/135.png"
   },
   {
     "PlayerId": "999",
@@ -657,7 +657,7 @@
     "Catches": "28",
     "Stumpings": "0",
     "TMID": 20,
-    "Image": "./../../assets/cricket/images/players/84.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/84.png"
   },
   {
     "PlayerId": "156",
@@ -690,7 +690,7 @@
     "Catches": "24",
     "Stumpings": "0",
     "TMID": 21,
-    "Image": "./../../assets/cricket/images/players/203.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/203.png"
   },
   {
     "PlayerId": "107",
@@ -723,7 +723,7 @@
     "Catches": "22",
     "Stumpings": "0",
     "TMID": 22,
-    "Image": "./../../assets/cricket/images/players/30.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/30.png"
   },
   {
     "PlayerId": "15",
@@ -756,7 +756,7 @@
     "Catches": "29",
     "Stumpings": "0",
     "TMID": 23,
-    "Image": "./../../assets/cricket/images/players/116.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/116.png"
   },
   {
     "PlayerId": "104",
@@ -789,7 +789,7 @@
     "Catches": "40",
     "Stumpings": "0",
     "TMID": 24,
-    "Image": "./../../assets/cricket/images/players/227.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/227.png"
   },
   {
     "PlayerId": "225",
@@ -822,7 +822,7 @@
     "Catches": "79",
     "Stumpings": "22",
     "TMID": 25,
-    "Image": "./../../assets/cricket/images/players/16.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/16.png"
   },
   {
     "PlayerId": "126",
@@ -855,7 +855,7 @@
     "Catches": "29",
     "Stumpings": "0",
     "TMID": 26,
-    "Image": "./../../assets/cricket/images/players/236.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/236.png"
   },
   {
     "PlayerId": "48",
@@ -888,7 +888,7 @@
     "Catches": "69",
     "Stumpings": "16",
     "TMID": 27,
-    "Image": "./../../assets/cricket/images/players/44.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/44.png"
   },
   {
     "PlayerId": "190",
@@ -921,7 +921,7 @@
     "Catches": "73",
     "Stumpings": "12",
     "TMID": 28,
-    "Image": "./../../assets/cricket/images/players/258.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/258.png"
   },
   {
     "PlayerId": "21",
@@ -954,7 +954,7 @@
     "Catches": "35",
     "Stumpings": "0",
     "TMID": 29,
-    "Image": "./../../assets/cricket/images/players/59.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/59.png"
   },
   {
     "PlayerId": "175",
@@ -987,7 +987,7 @@
     "Catches": "34",
     "Stumpings": "0",
     "TMID": 30,
-    "Image": "./../../assets/cricket/images/players/113.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/113.png"
   },
   {
     "PlayerId": "10",
@@ -1020,7 +1020,7 @@
     "Catches": "24",
     "Stumpings": "0",
     "TMID": 31,
-    "Image": "./../../assets/cricket/images/players/111.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/111.png"
   },
   {
     "PlayerId": "174",
@@ -1053,7 +1053,7 @@
     "Catches": "58",
     "Stumpings": "0",
     "TMID": 32,
-    "Image": "./../../assets/cricket/images/players/108.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/108.png"
   },
   {
     "PlayerId": "110",
@@ -1086,7 +1086,7 @@
     "Catches": "52",
     "Stumpings": "0",
     "TMID": 33,
-    "Image": "./../../assets/cricket/images/players/1113.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1113.png"
   },
   {
     "PlayerId": "9",
@@ -1119,7 +1119,7 @@
     "Catches": "15",
     "Stumpings": "0",
     "TMID": 34,
-    "Image": "./../../assets/cricket/images/players/1124.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1124.png"
   },
   {
     "PlayerId": "0",
@@ -1152,7 +1152,7 @@
     "Catches": "12",
     "Stumpings": "0",
     "TMID": 35,
-    "Image": "./../../assets/cricket/images/players/77.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/77.png"
   },
   {
     "PlayerId": "94",
@@ -1185,7 +1185,7 @@
     "Catches": "70",
     "Stumpings": "0",
     "TMID": 36,
-    "Image": "./../../assets/cricket/images/players/24.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/24.png"
   },
   {
     "PlayerId": "0",
@@ -1218,7 +1218,7 @@
     "Catches": "63",
     "Stumpings": "10",
     "TMID": 37,
-    "Image": "./../../assets/cricket/images/players/52.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/52.png"
   },
   {
     "PlayerId": "55",
@@ -1251,7 +1251,7 @@
     "Catches": "50",
     "Stumpings": "0",
     "TMID": 38,
-    "Image": "./../../assets/cricket/images/players/158.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/158.png"
   },
   {
     "PlayerId": "167",
@@ -1284,7 +1284,7 @@
     "Catches": "20",
     "Stumpings": "0",
     "TMID": 39,
-    "Image": "./../../assets/cricket/images/players/211.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/211.png"
   },
   {
     "PlayerId": "28",
@@ -1317,7 +1317,7 @@
     "Catches": "40",
     "Stumpings": "0",
     "TMID": 40,
-    "Image": "./../../assets/cricket/images/players/282.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/282.png"
   },
   {
     "PlayerId": "0",
@@ -1350,7 +1350,7 @@
     "Catches": "37",
     "Stumpings": "6",
     "TMID": 41,
-    "Image": "./../../assets/cricket/images/players/202.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/202.png"
   },
   {
     "PlayerId": "19",
@@ -1383,7 +1383,7 @@
     "Catches": "57",
     "Stumpings": "5",
     "TMID": 42,
-    "Image": "./../../assets/cricket/images/players/1125.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1125.png"
   },
   {
     "PlayerId": "132",
@@ -1416,7 +1416,7 @@
     "Catches": "36",
     "Stumpings": "0",
     "TMID": 43,
-    "Image": "./../../assets/cricket/images/players/72.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/72.png"
   },
   {
     "PlayerId": "54",
@@ -1449,7 +1449,7 @@
     "Catches": "57",
     "Stumpings": "0",
     "TMID": 44,
-    "Image": "./../../assets/cricket/images/players/2740.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2740.png"
   },
   {
     "PlayerId": "53",
@@ -1482,7 +1482,7 @@
     "Catches": "47",
     "Stumpings": "0",
     "TMID": 45,
-    "Image": "./../../assets/cricket/images/players/7.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/7.png"
   },
   {
     "PlayerId": "128",
@@ -1515,7 +1515,7 @@
     "Catches": "59",
     "Stumpings": "0",
     "TMID": 46,
-    "Image": "./../../assets/cricket/images/players/187.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/187.png"
   },
   {
     "PlayerId": "461",
@@ -1548,7 +1548,7 @@
     "Catches": "34",
     "Stumpings": "0",
     "TMID": 47,
-    "Image": "./../../assets/cricket/images/players/45.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/45.png"
   },
   {
     "PlayerId": "0",
@@ -1581,7 +1581,7 @@
     "Catches": "38",
     "Stumpings": "0",
     "TMID": 48,
-    "Image": "./../../assets/cricket/images/players/166.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/166.png"
   },
   {
     "PlayerId": "220",
@@ -1614,7 +1614,7 @@
     "Catches": "14",
     "Stumpings": "0",
     "TMID": 49,
-    "Image": "./../../assets/cricket/images/players/1112.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1112.png"
   },
   {
     "PlayerId": "458",
@@ -1647,7 +1647,7 @@
     "Catches": "31",
     "Stumpings": "0",
     "TMID": 50,
-    "Image": "./../../assets/cricket/images/players/49.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/49.png"
   },
   {
     "PlayerId": "0",
@@ -1680,7 +1680,7 @@
     "Catches": "53",
     "Stumpings": "0",
     "TMID": 51,
-    "Image": "./../../assets/cricket/images/players/271.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/271.png"
   },
   {
     "PlayerId": "12",
@@ -1713,7 +1713,7 @@
     "Catches": "39",
     "Stumpings": "0",
     "TMID": 52,
-    "Image": "./../../assets/cricket/images/players/1563.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1563.png"
   },
   {
     "PlayerId": "141",
@@ -1746,7 +1746,7 @@
     "Catches": "26",
     "Stumpings": "0",
     "TMID": 53,
-    "Image": "./../../assets/cricket/images/players/177.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/177.png"
   },
   {
     "PlayerId": "0",
@@ -1779,7 +1779,7 @@
     "Catches": "31",
     "Stumpings": "0",
     "TMID": 54,
-    "Image": "./../../assets/cricket/images/players/198.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/198.png"
   },
   {
     "PlayerId": "18",
@@ -1812,7 +1812,7 @@
     "Catches": "64",
     "Stumpings": "18",
     "TMID": 55,
-    "Image": "./../../assets/cricket/images/players/2972.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2972.png"
   },
   {
     "PlayerId": "17",
@@ -1845,7 +1845,7 @@
     "Catches": "35",
     "Stumpings": "0",
     "TMID": 56,
-    "Image": "./../../assets/cricket/images/players/3183.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3183.png"
   },
   {
     "PlayerId": "0",
@@ -1878,7 +1878,7 @@
     "Catches": "45",
     "Stumpings": "0",
     "TMID": 57,
-    "Image": "./../../assets/cricket/images/players/89.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/89.png"
   },
   {
     "PlayerId": "0",
@@ -1911,7 +1911,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 58,
-    "Image": "./../../assets/cricket/images/players/12.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/12.png"
   },
   {
     "PlayerId": "50",
@@ -1944,7 +1944,7 @@
     "Catches": "15",
     "Stumpings": "0",
     "TMID": 59,
-    "Image": "./../../assets/cricket/images/players/38.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/38.png"
   },
   {
     "PlayerId": "195",
@@ -1977,7 +1977,7 @@
     "Catches": "17",
     "Stumpings": "0",
     "TMID": 60,
-    "Image": "./../../assets/cricket/images/players/148.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/148.png"
   },
   {
     "PlayerId": "215",
@@ -2010,7 +2010,7 @@
     "Catches": "40",
     "Stumpings": "0",
     "TMID": 61,
-    "Image": "./../../assets/cricket/images/players/1556.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1556.png"
   },
   {
     "PlayerId": "47",
@@ -2043,7 +2043,7 @@
     "Catches": "14",
     "Stumpings": "0",
     "TMID": 62,
-    "Image": "./../../assets/cricket/images/players/94.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/94.png"
   },
   {
     "PlayerId": "540",
@@ -2076,7 +2076,7 @@
     "Catches": "25",
     "Stumpings": "0",
     "TMID": 63,
-    "Image": "./../../assets/cricket/images/players/163.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/163.png"
   },
   {
     "PlayerId": "230",
@@ -2109,7 +2109,7 @@
     "Catches": "24",
     "Stumpings": "0",
     "TMID": 64,
-    "Image": "./../../assets/cricket/images/players/180.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/180.png"
   },
   {
     "PlayerId": "58",
@@ -2142,7 +2142,7 @@
     "Catches": "28",
     "Stumpings": "7",
     "TMID": 65,
-    "Image": "./../../assets/cricket/images/players/297.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/297.png"
   },
   {
     "PlayerId": "3",
@@ -2175,7 +2175,7 @@
     "Catches": "28",
     "Stumpings": "0",
     "TMID": 66,
-    "Image": "./../../assets/cricket/images/players/167.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/167.png"
   },
   {
     "PlayerId": "170",
@@ -2208,7 +2208,7 @@
     "Catches": "62",
     "Stumpings": "14",
     "TMID": 67,
-    "Image": "./../../assets/cricket/images/players/834.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/834.png"
   },
   {
     "PlayerId": "218",
@@ -2241,7 +2241,7 @@
     "Catches": "27",
     "Stumpings": "0",
     "TMID": 68,
-    "Image": "./../../assets/cricket/images/players/2885.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2885.png"
   },
   {
     "PlayerId": "481",
@@ -2274,7 +2274,7 @@
     "Catches": "19",
     "Stumpings": "0",
     "TMID": 69,
-    "Image": "./../../assets/cricket/images/players/26.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/26.png"
   },
   {
     "PlayerId": "180",
@@ -2307,7 +2307,7 @@
     "Catches": "26",
     "Stumpings": "0",
     "TMID": 70,
-    "Image": "./../../assets/cricket/images/players/86.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/86.png"
   },
   {
     "PlayerId": "462",
@@ -2340,7 +2340,7 @@
     "Catches": "21",
     "Stumpings": "0",
     "TMID": 71,
-    "Image": "./../../assets/cricket/images/players/165.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/165.png"
   },
   {
     "PlayerId": "0",
@@ -2373,7 +2373,7 @@
     "Catches": "33",
     "Stumpings": "0",
     "TMID": 72,
-    "Image": "./../../assets/cricket/images/players/413.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/413.png"
   },
   {
     "PlayerId": "148",
@@ -2406,7 +2406,7 @@
     "Catches": "21",
     "Stumpings": "0",
     "TMID": 73,
-    "Image": "./../../assets/cricket/images/players/2738.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2738.png"
   },
   {
     "PlayerId": "0",
@@ -2439,7 +2439,7 @@
     "Catches": "18",
     "Stumpings": "0",
     "TMID": 74,
-    "Image": "./../../assets/cricket/images/players/131.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/131.png"
   },
   {
     "PlayerId": "0",
@@ -2472,7 +2472,7 @@
     "Catches": "21",
     "Stumpings": "0",
     "TMID": 75,
-    "Image": "./../../assets/cricket/images/players/92.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/92.png"
   },
   {
     "PlayerId": "178",
@@ -2505,7 +2505,7 @@
     "Catches": "22",
     "Stumpings": "0",
     "TMID": 76,
-    "Image": "./../../assets/cricket/images/players/101.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/101.png"
   },
   {
     "PlayerId": "0",
@@ -2538,7 +2538,7 @@
     "Catches": "30",
     "Stumpings": "0",
     "TMID": 77,
-    "Image": "./../../assets/cricket/images/players/182.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/182.png"
   },
   {
     "PlayerId": "308",
@@ -2571,7 +2571,7 @@
     "Catches": "36",
     "Stumpings": "0",
     "TMID": 78,
-    "Image": "./../../assets/cricket/images/players/197.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/197.png"
   },
   {
     "PlayerId": "182",
@@ -2604,7 +2604,7 @@
     "Catches": "43",
     "Stumpings": "1",
     "TMID": 79,
-    "Image": "./../../assets/cricket/images/players/509.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/509.png"
   },
   {
     "PlayerId": "112",
@@ -2637,7 +2637,7 @@
     "Catches": "38",
     "Stumpings": "0",
     "TMID": 80,
-    "Image": "./../../assets/cricket/images/players/836.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/836.png"
   },
   {
     "PlayerId": "0",
@@ -2670,7 +2670,7 @@
     "Catches": "51",
     "Stumpings": "16",
     "TMID": 81,
-    "Image": "./../../assets/cricket/images/players/65.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/65.png"
   },
   {
     "PlayerId": "0",
@@ -2703,7 +2703,7 @@
     "Catches": "32",
     "Stumpings": "0",
     "TMID": 82,
-    "Image": "./../../assets/cricket/images/players/175.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/175.png"
   },
   {
     "PlayerId": "233",
@@ -2736,7 +2736,7 @@
     "Catches": "23",
     "Stumpings": "0",
     "TMID": 83,
-    "Image": "./../../assets/cricket/images/players/97.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/97.png"
   },
   {
     "PlayerId": "114",
@@ -2769,7 +2769,7 @@
     "Catches": "18",
     "Stumpings": "0",
     "TMID": 84,
-    "Image": "./../../assets/cricket/images/players/157.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/157.png"
   },
   {
     "PlayerId": "66",
@@ -2802,7 +2802,7 @@
     "Catches": "25",
     "Stumpings": "0",
     "TMID": 85,
-    "Image": "./../../assets/cricket/images/players/969.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/969.png"
   },
   {
     "PlayerId": "131",
@@ -2835,7 +2835,7 @@
     "Catches": "23",
     "Stumpings": "0",
     "TMID": 86,
-    "Image": "./../../assets/cricket/images/players/276.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/276.png"
   },
   {
     "PlayerId": "65",
@@ -2868,7 +2868,7 @@
     "Catches": "39",
     "Stumpings": "0",
     "TMID": 87,
-    "Image": "./../../assets/cricket/images/players/440.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/440.png"
   },
   {
     "PlayerId": "188",
@@ -2901,7 +2901,7 @@
     "Catches": "29",
     "Stumpings": "0",
     "TMID": 88,
-    "Image": "./../../assets/cricket/images/players/3838.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3838.png"
   },
   {
     "PlayerId": "105",
@@ -2934,7 +2934,7 @@
     "Catches": "24",
     "Stumpings": "0",
     "TMID": 89,
-    "Image": "./../../assets/cricket/images/players/1745.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1745.png"
   },
   {
     "PlayerId": "164",
@@ -2967,7 +2967,7 @@
     "Catches": "32",
     "Stumpings": "2",
     "TMID": 90,
-    "Image": "./../../assets/cricket/images/players/2975.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2975.png"
   },
   {
     "PlayerId": "62",
@@ -3000,7 +3000,7 @@
     "Catches": "30",
     "Stumpings": "0",
     "TMID": 91,
-    "Image": "./../../assets/cricket/images/players/3761.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3761.png"
   },
   {
     "PlayerId": "221",
@@ -3033,7 +3033,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 92,
-    "Image": "./../../assets/cricket/images/players/57.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/57.png"
   },
   {
     "PlayerId": "0",
@@ -3066,7 +3066,7 @@
     "Catches": "45",
     "Stumpings": "9",
     "TMID": 93,
-    "Image": "./../../assets/cricket/images/players/27.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/27.png"
   },
   {
     "PlayerId": "41",
@@ -3099,7 +3099,7 @@
     "Catches": "26",
     "Stumpings": "0",
     "TMID": 94,
-    "Image": "./../../assets/cricket/images/players/191.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/191.png"
   },
   {
     "PlayerId": "222",
@@ -3132,7 +3132,7 @@
     "Catches": "14",
     "Stumpings": "0",
     "TMID": 95,
-    "Image": "./../../assets/cricket/images/players/201.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/201.png"
   },
   {
     "PlayerId": "0",
@@ -3165,7 +3165,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 96,
-    "Image": "./../../assets/cricket/images/players/169.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/169.png"
   },
   {
     "PlayerId": "100",
@@ -3198,7 +3198,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 97,
-    "Image": "./../../assets/cricket/images/players/1107.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1107.png"
   },
   {
     "PlayerId": "459",
@@ -3231,7 +3231,7 @@
     "Catches": "12",
     "Stumpings": "0",
     "TMID": 98,
-    "Image": "./../../assets/cricket/images/players/106.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/106.png"
   },
   {
     "PlayerId": "98",
@@ -3264,7 +3264,7 @@
     "Catches": "14",
     "Stumpings": "0",
     "TMID": 99,
-    "Image": "./../../assets/cricket/images/players/1118.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1118.png"
   },
   {
     "PlayerId": "0",
@@ -3297,7 +3297,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 100,
-    "Image": "./../../assets/cricket/images/players/112.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/112.png"
   },
   {
     "PlayerId": "23",
@@ -3330,7 +3330,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 101,
-    "Image": "./../../assets/cricket/images/players/964.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/964.png"
   },
   {
     "PlayerId": "449",
@@ -3363,7 +3363,7 @@
     "Catches": "22",
     "Stumpings": "0",
     "TMID": 102,
-    "Image": "./../../assets/cricket/images/players/229.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/229.png"
   },
   {
     "PlayerId": "0",
@@ -3396,7 +3396,7 @@
     "Catches": "12",
     "Stumpings": "0",
     "TMID": 103,
-    "Image": "./../../assets/cricket/images/players/87.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/87.png"
   },
   {
     "PlayerId": "63",
@@ -3429,7 +3429,7 @@
     "Catches": "22",
     "Stumpings": "0",
     "TMID": 104,
-    "Image": "./../../assets/cricket/images/players/3840.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3840.png"
   },
   {
     "PlayerId": "0",
@@ -3462,7 +3462,7 @@
     "Catches": "14",
     "Stumpings": "0",
     "TMID": 105,
-    "Image": "./../../assets/cricket/images/players/62.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/62.png"
   },
   {
     "PlayerId": "0",
@@ -3495,7 +3495,7 @@
     "Catches": "17",
     "Stumpings": "0",
     "TMID": 106,
-    "Image": "./../../assets/cricket/images/players/147.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/147.png"
   },
   {
     "PlayerId": "0",
@@ -3528,7 +3528,7 @@
     "Catches": "25",
     "Stumpings": "0",
     "TMID": 107,
-    "Image": "./../../assets/cricket/images/players/186.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/186.png"
   },
   {
     "PlayerId": "120",
@@ -3561,7 +3561,7 @@
     "Catches": "24",
     "Stumpings": "0",
     "TMID": 108,
-    "Image": "./../../assets/cricket/images/players/1749.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1749.png"
   },
   {
     "PlayerId": "91",
@@ -3594,7 +3594,7 @@
     "Catches": "12",
     "Stumpings": "0",
     "TMID": 109,
-    "Image": "./../../assets/cricket/images/players/140.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/140.png"
   },
   {
     "PlayerId": "116",
@@ -3627,7 +3627,7 @@
     "Catches": "25",
     "Stumpings": "0",
     "TMID": 110,
-    "Image": "./../../assets/cricket/images/players/1664.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1664.png"
   },
   {
     "PlayerId": "51",
@@ -3660,7 +3660,7 @@
     "Catches": "15",
     "Stumpings": "0",
     "TMID": 111,
-    "Image": "./../../assets/cricket/images/players/3764.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3764.png"
   },
   {
     "PlayerId": "133",
@@ -3693,7 +3693,7 @@
     "Catches": "28",
     "Stumpings": "0",
     "TMID": 112,
-    "Image": "./../../assets/cricket/images/players/388.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/388.png"
   },
   {
     "PlayerId": "0",
@@ -3726,7 +3726,7 @@
     "Catches": "13",
     "Stumpings": "0",
     "TMID": 113,
-    "Image": "./../../assets/cricket/images/players/66.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/66.png"
   },
   {
     "PlayerId": "0",
@@ -3759,7 +3759,7 @@
     "Catches": "27",
     "Stumpings": "0",
     "TMID": 114,
-    "Image": "./../../assets/cricket/images/players/20.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/20.png"
   },
   {
     "PlayerId": "0",
@@ -3792,7 +3792,7 @@
     "Catches": "21",
     "Stumpings": "0",
     "TMID": 115,
-    "Image": "./../../assets/cricket/images/players/130.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/130.png"
   },
   {
     "PlayerId": "0",
@@ -3825,7 +3825,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 116,
-    "Image": "./../../assets/cricket/images/players/193.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/193.png"
   },
   {
     "PlayerId": "14",
@@ -3858,7 +3858,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 117,
-    "Image": "./../../assets/cricket/images/players/261.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/261.png"
   },
   {
     "PlayerId": "0",
@@ -3891,7 +3891,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 118,
-    "Image": "./../../assets/cricket/images/players/730.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/730.png"
   },
   {
     "PlayerId": "0",
@@ -3924,7 +3924,7 @@
     "Catches": "15",
     "Stumpings": "0",
     "TMID": 119,
-    "Image": "./../../assets/cricket/images/players/115.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/115.png"
   },
   {
     "PlayerId": "78",
@@ -3957,7 +3957,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 120,
-    "Image": "./../../assets/cricket/images/players/226.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/226.png"
   },
   {
     "PlayerId": "0",
@@ -3990,7 +3990,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 121,
-    "Image": "./../../assets/cricket/images/players/292.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/292.png"
   },
   {
     "PlayerId": "185",
@@ -4023,7 +4023,7 @@
     "Catches": "13",
     "Stumpings": "0",
     "TMID": 122,
-    "Image": "./../../assets/cricket/images/players/1085.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1085.png"
   },
   {
     "PlayerId": "64",
@@ -4056,7 +4056,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 123,
-    "Image": "./../../assets/cricket/images/players/1086.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1086.png"
   },
   {
     "PlayerId": "171",
@@ -4089,7 +4089,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 124,
-    "Image": "./../../assets/cricket/images/players/3763.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3763.png"
   },
   {
     "PlayerId": "0",
@@ -4122,7 +4122,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 125,
-    "Image": "./../../assets/cricket/images/players/48.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/48.png"
   },
   {
     "PlayerId": "0",
@@ -4155,7 +4155,7 @@
     "Catches": "19",
     "Stumpings": "0",
     "TMID": 126,
-    "Image": "./../../assets/cricket/images/players/125.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/125.png"
   },
   {
     "PlayerId": "0",
@@ -4188,7 +4188,7 @@
     "Catches": "15",
     "Stumpings": "0",
     "TMID": 127,
-    "Image": "./../../assets/cricket/images/players/213.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/213.png"
   },
   {
     "PlayerId": "197",
@@ -4221,7 +4221,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 128,
-    "Image": "./../../assets/cricket/images/players/61.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/61.png"
   },
   {
     "PlayerId": "61",
@@ -4254,7 +4254,7 @@
     "Catches": "24",
     "Stumpings": "0",
     "TMID": 129,
-    "Image": "./../../assets/cricket/images/players/1083.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1083.png"
   },
   {
     "PlayerId": "20",
@@ -4287,7 +4287,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 130,
-    "Image": "./../../assets/cricket/images/players/2973.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2973.png"
   },
   {
     "PlayerId": "150",
@@ -4320,7 +4320,7 @@
     "Catches": "9",
     "Stumpings": "0",
     "TMID": 131,
-    "Image": "./../../assets/cricket/images/players/5105.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5105.png"
   },
   {
     "PlayerId": "0",
@@ -4353,7 +4353,7 @@
     "Catches": "28",
     "Stumpings": "0",
     "TMID": 132,
-    "Image": "./../../assets/cricket/images/players/181.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/181.png"
   },
   {
     "PlayerId": "275",
@@ -4386,7 +4386,7 @@
     "Catches": "19",
     "Stumpings": "0",
     "TMID": 133,
-    "Image": "./../../assets/cricket/images/players/217.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/217.png"
   },
   {
     "PlayerId": "192",
@@ -4419,7 +4419,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 134,
-    "Image": "./../../assets/cricket/images/players/1748.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1748.png"
   },
   {
     "PlayerId": "77",
@@ -4452,7 +4452,7 @@
     "Catches": "23",
     "Stumpings": "0",
     "TMID": 135,
-    "Image": "./../../assets/cricket/images/players/307.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/307.png"
   },
   {
     "PlayerId": "208",
@@ -4485,7 +4485,7 @@
     "Catches": "14",
     "Stumpings": "0",
     "TMID": 136,
-    "Image": "./../../assets/cricket/images/players/53.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/53.png"
   },
   {
     "PlayerId": "0",
@@ -4518,7 +4518,7 @@
     "Catches": "12",
     "Stumpings": "0",
     "TMID": 137,
-    "Image": "./../../assets/cricket/images/players/88.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/88.png"
   },
   {
     "PlayerId": "0",
@@ -4551,7 +4551,7 @@
     "Catches": "22",
     "Stumpings": "0",
     "TMID": 138,
-    "Image": "./../../assets/cricket/images/players/178.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/178.png"
   },
   {
     "PlayerId": "136",
@@ -4584,7 +4584,7 @@
     "Catches": "19",
     "Stumpings": "1",
     "TMID": 139,
-    "Image": "./../../assets/cricket/images/players/1703.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1703.png"
   },
   {
     "PlayerId": "189",
@@ -4617,7 +4617,7 @@
     "Catches": "29",
     "Stumpings": "0",
     "TMID": 140,
-    "Image": "./../../assets/cricket/images/players/4445.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4445.png"
   },
   {
     "PlayerId": "139",
@@ -4650,7 +4650,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 141,
-    "Image": "./../../assets/cricket/images/players/1564.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1564.png"
   },
   {
     "PlayerId": "258",
@@ -4683,7 +4683,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 142,
-    "Image": "./../../assets/cricket/images/players/1594.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1594.png"
   },
   {
     "PlayerId": "210",
@@ -4716,7 +4716,7 @@
     "Catches": "17",
     "Stumpings": "0",
     "TMID": 143,
-    "Image": "./../../assets/cricket/images/players/1705.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1705.png"
   },
   {
     "PlayerId": "200",
@@ -4749,7 +4749,7 @@
     "Catches": "20",
     "Stumpings": "0",
     "TMID": 144,
-    "Image": "./../../assets/cricket/images/players/5430.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5430.png"
   },
   {
     "PlayerId": "0",
@@ -4782,7 +4782,7 @@
     "Catches": "15",
     "Stumpings": "0",
     "TMID": 145,
-    "Image": "./../../assets/cricket/images/players/124.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/124.png"
   },
   {
     "PlayerId": "206",
@@ -4815,7 +4815,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 146,
-    "Image": "./../../assets/cricket/images/players/1735.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1735.png"
   },
   {
     "PlayerId": "0",
@@ -4848,7 +4848,7 @@
     "Catches": "9",
     "Stumpings": "0",
     "TMID": 147,
-    "Image": "./../../assets/cricket/images/players/110.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/110.png"
   },
   {
     "PlayerId": "177",
@@ -4881,7 +4881,7 @@
     "Catches": "20",
     "Stumpings": "0",
     "TMID": 148,
-    "Image": "./../../assets/cricket/images/players/1154.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1154.png"
   },
   {
     "PlayerId": "977",
@@ -4914,7 +4914,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 149,
-    "Image": "./../../assets/cricket/images/players/91.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/91.png"
   },
   {
     "PlayerId": "0",
@@ -4947,7 +4947,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 150,
-    "Image": "./../../assets/cricket/images/players/126.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/126.png"
   },
   {
     "PlayerId": "27",
@@ -4980,7 +4980,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 151,
-    "Image": "./../../assets/cricket/images/players/179.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/179.png"
   },
   {
     "PlayerId": "0",
@@ -5013,7 +5013,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 152,
-    "Image": "./../../assets/cricket/images/players/331.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/331.png"
   },
   {
     "PlayerId": "33",
@@ -5046,7 +5046,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 153,
-    "Image": "./../../assets/cricket/images/players/488.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/488.png"
   },
   {
     "PlayerId": "135",
@@ -5079,7 +5079,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 154,
-    "Image": "./../../assets/cricket/images/players/3187.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3187.png"
   },
   {
     "PlayerId": "140",
@@ -5112,7 +5112,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 155,
-    "Image": "./../../assets/cricket/images/players/5432.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5432.png"
   },
   {
     "PlayerId": "201",
@@ -5145,7 +5145,7 @@
     "Catches": "18",
     "Stumpings": "1",
     "TMID": 156,
-    "Image": "./../../assets/cricket/images/players/253.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/253.png"
   },
   {
     "PlayerId": "96",
@@ -5178,7 +5178,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 157,
-    "Image": "./../../assets/cricket/images/players/898.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/898.png"
   },
   {
     "PlayerId": "0",
@@ -5211,7 +5211,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 158,
-    "Image": "./../../assets/cricket/images/players/19.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/19.png"
   },
   {
     "PlayerId": "507",
@@ -5244,7 +5244,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 159,
-    "Image": "./../../assets/cricket/images/players/40.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/40.png"
   },
   {
     "PlayerId": "492",
@@ -5277,7 +5277,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 160,
-    "Image": "./../../assets/cricket/images/players/241.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/241.png"
   },
   {
     "PlayerId": "0",
@@ -5310,7 +5310,7 @@
     "Catches": "21",
     "Stumpings": "7",
     "TMID": 161,
-    "Image": "./../../assets/cricket/images/players/90.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/90.png"
   },
   {
     "PlayerId": "0",
@@ -5343,7 +5343,7 @@
     "Catches": "21",
     "Stumpings": "0",
     "TMID": 162,
-    "Image": "./../../assets/cricket/images/players/206.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/206.png"
   },
   {
     "PlayerId": "216",
@@ -5376,7 +5376,7 @@
     "Catches": "20",
     "Stumpings": "4",
     "TMID": 163,
-    "Image": "./../../assets/cricket/images/players/506.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/506.png"
   },
   {
     "PlayerId": "5",
@@ -5409,7 +5409,7 @@
     "Catches": "12",
     "Stumpings": "0",
     "TMID": 164,
-    "Image": "./../../assets/cricket/images/players/840.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/840.png"
   },
   {
     "PlayerId": "464",
@@ -5442,7 +5442,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 165,
-    "Image": "./../../assets/cricket/images/players/47.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/47.png"
   },
   {
     "PlayerId": "300",
@@ -5475,7 +5475,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 166,
-    "Image": "./../../assets/cricket/images/players/196.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/196.png"
   },
   {
     "PlayerId": "484",
@@ -5508,7 +5508,7 @@
     "Catches": "18",
     "Stumpings": "0",
     "TMID": 167,
-    "Image": "./../../assets/cricket/images/players/240.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/240.png"
   },
   {
     "PlayerId": "263",
@@ -5541,7 +5541,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 168,
-    "Image": "./../../assets/cricket/images/players/1075.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1075.png"
   },
   {
     "PlayerId": "109",
@@ -5574,7 +5574,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 169,
-    "Image": "./../../assets/cricket/images/players/1561.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1561.png"
   },
   {
     "PlayerId": "0",
@@ -5607,7 +5607,7 @@
     "Catches": "20",
     "Stumpings": "0",
     "TMID": 170,
-    "Image": "./../../assets/cricket/images/players/190.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/190.png"
   },
   {
     "PlayerId": "125",
@@ -5640,7 +5640,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 171,
-    "Image": "./../../assets/cricket/images/players/4698.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4698.png"
   },
   {
     "PlayerId": "0",
@@ -5673,7 +5673,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 172,
-    "Image": "./../../assets/cricket/images/players/85.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/85.png"
   },
   {
     "PlayerId": "0",
@@ -5706,7 +5706,7 @@
     "Catches": "12",
     "Stumpings": "0",
     "TMID": 173,
-    "Image": "./../../assets/cricket/images/players/172.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/172.png"
   },
   {
     "PlayerId": "471",
@@ -5739,7 +5739,7 @@
     "Catches": "22",
     "Stumpings": "0",
     "TMID": 174,
-    "Image": "./../../assets/cricket/images/players/212.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/212.png"
   },
   {
     "PlayerId": "279",
@@ -5772,7 +5772,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 175,
-    "Image": "./../../assets/cricket/images/players/215.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/215.png"
   },
   {
     "PlayerId": "212",
@@ -5805,7 +5805,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 176,
-    "Image": "./../../assets/cricket/images/players/3760.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3760.png"
   },
   {
     "PlayerId": "102",
@@ -5838,7 +5838,7 @@
     "Catches": "14",
     "Stumpings": "0",
     "TMID": 177,
-    "Image": "./../../assets/cricket/images/players/5443.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5443.png"
   },
   {
     "PlayerId": "158",
@@ -5871,7 +5871,7 @@
     "Catches": "3",
     "Stumpings": "5",
     "TMID": 178,
-    "Image": "./../../assets/cricket/images/players/99.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/99.png"
   },
   {
     "PlayerId": "181",
@@ -5904,7 +5904,7 @@
     "Catches": "9",
     "Stumpings": "0",
     "TMID": 179,
-    "Image": "./../../assets/cricket/images/players/3502.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3502.png"
   },
   {
     "PlayerId": "69",
@@ -5937,7 +5937,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 180,
-    "Image": "./../../assets/cricket/images/players/3729.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3729.png"
   },
   {
     "PlayerId": "224",
@@ -5970,7 +5970,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 181,
-    "Image": "./../../assets/cricket/images/players/3831.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3831.png"
   },
   {
     "PlayerId": "211",
@@ -6003,7 +6003,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 182,
-    "Image": "./../../assets/cricket/images/players/5431.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5431.png"
   },
   {
     "PlayerId": "0",
@@ -6036,7 +6036,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 183,
-    "Image": "./../../assets/cricket/images/players/78.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/78.png"
   },
   {
     "PlayerId": "0",
@@ -6069,7 +6069,7 @@
     "Catches": "18",
     "Stumpings": "0",
     "TMID": 184,
-    "Image": "./../../assets/cricket/images/players/224.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/224.png"
   },
   {
     "PlayerId": "8",
@@ -6102,7 +6102,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 185,
-    "Image": "./../../assets/cricket/images/players/2964.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2964.png"
   },
   {
     "PlayerId": "531",
@@ -6135,7 +6135,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 186,
-    "Image": "./../../assets/cricket/images/players/1114.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1114.png"
   },
   {
     "PlayerId": "0",
@@ -6168,7 +6168,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 187,
-    "Image": "./../../assets/cricket/images/players/36.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/36.png"
   },
   {
     "PlayerId": "0",
@@ -6201,7 +6201,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 188,
-    "Image": "./../../assets/cricket/images/players/69.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/69.png"
   },
   {
     "PlayerId": "460",
@@ -6234,7 +6234,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 189,
-    "Image": "./../../assets/cricket/images/players/104.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/104.png"
   },
   {
     "PlayerId": "0",
@@ -6267,7 +6267,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 190,
-    "Image": "./../../assets/cricket/images/players/352.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/352.png"
   },
   {
     "PlayerId": "996",
@@ -6300,7 +6300,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 191,
-    "Image": "./../../assets/cricket/images/players/1088.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1088.png"
   },
   {
     "PlayerId": "138",
@@ -6333,7 +6333,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 192,
-    "Image": "./../../assets/cricket/images/players/2939.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2939.png"
   },
   {
     "PlayerId": "154",
@@ -6366,7 +6366,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 193,
-    "Image": "./../../assets/cricket/images/players/3779.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3779.png"
   },
   {
     "PlayerId": "0",
@@ -6399,7 +6399,7 @@
     "Catches": "9",
     "Stumpings": "0",
     "TMID": 194,
-    "Image": "./../../assets/cricket/images/players/34.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/34.png"
   },
   {
     "PlayerId": "223",
@@ -6432,7 +6432,7 @@
     "Catches": "17",
     "Stumpings": "7",
     "TMID": 195,
-    "Image": "./../../assets/cricket/images/players/95.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/95.png"
   },
   {
     "PlayerId": "0",
@@ -6465,7 +6465,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 196,
-    "Image": "./../../assets/cricket/images/players/259.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/259.png"
   },
   {
     "PlayerId": "0",
@@ -6498,7 +6498,7 @@
     "Catches": "13",
     "Stumpings": "3",
     "TMID": 197,
-    "Image": "./../../assets/cricket/images/players/306.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/306.png"
   },
   {
     "PlayerId": "0",
@@ -6531,7 +6531,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 198,
-    "Image": "./../../assets/cricket/images/players/10.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/10.png"
   },
   {
     "PlayerId": "49",
@@ -6564,7 +6564,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 199,
-    "Image": "./../../assets/cricket/images/players/156.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/156.png"
   },
   {
     "PlayerId": "0",
@@ -6597,7 +6597,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 200,
-    "Image": "./../../assets/cricket/images/players/342.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/342.png"
   },
   {
     "PlayerId": "0",
@@ -6630,7 +6630,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 201,
-    "Image": "./../../assets/cricket/images/players/968.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/968.png"
   },
   {
     "PlayerId": "30",
@@ -6663,7 +6663,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 202,
-    "Image": "./../../assets/cricket/images/players/1480.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1480.png"
   },
   {
     "PlayerId": "103",
@@ -6696,7 +6696,7 @@
     "Catches": "18",
     "Stumpings": "1",
     "TMID": 203,
-    "Image": "./../../assets/cricket/images/players/2756.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2756.png"
   },
   {
     "PlayerId": "207",
@@ -6729,7 +6729,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 204,
-    "Image": "./../../assets/cricket/images/players/3824.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3824.png"
   },
   {
     "PlayerId": "142",
@@ -6762,7 +6762,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 205,
-    "Image": "./../../assets/cricket/images/players/5433.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5433.png"
   },
   {
     "PlayerId": "465",
@@ -6795,7 +6795,7 @@
     "Catches": "14",
     "Stumpings": "0",
     "TMID": 206,
-    "Image": "./../../assets/cricket/images/players/159.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/159.png"
   },
   {
     "PlayerId": "0",
@@ -6828,7 +6828,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 207,
-    "Image": "./../../assets/cricket/images/players/162.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/162.png"
   },
   {
     "PlayerId": "665",
@@ -6861,7 +6861,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 208,
-    "Image": "./../../assets/cricket/images/players/200.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/200.png"
   },
   {
     "PlayerId": "0",
@@ -6894,7 +6894,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 209,
-    "Image": "./../../assets/cricket/images/players/219.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/219.png"
   },
   {
     "PlayerId": "0",
@@ -6927,7 +6927,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 210,
-    "Image": "./../../assets/cricket/images/players/220.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/220.png"
   },
   {
     "PlayerId": "40",
@@ -6960,7 +6960,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 211,
-    "Image": "./../../assets/cricket/images/players/221.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/221.png"
   },
   {
     "PlayerId": "368",
@@ -6993,7 +6993,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 212,
-    "Image": "./../../assets/cricket/images/players/595.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/595.png"
   },
   {
     "PlayerId": "124",
@@ -7026,7 +7026,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 213,
-    "Image": "./../../assets/cricket/images/players/1106.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1106.png"
   },
   {
     "PlayerId": "0",
@@ -7059,7 +7059,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 214,
-    "Image": "./../../assets/cricket/images/players/139.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/139.png"
   },
   {
     "PlayerId": "519",
@@ -7092,7 +7092,7 @@
     "Catches": "13",
     "Stumpings": "0",
     "TMID": 215,
-    "Image": "./../../assets/cricket/images/players/1299.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1299.png"
   },
   {
     "PlayerId": "179",
@@ -7125,7 +7125,7 @@
     "Catches": "14",
     "Stumpings": "0",
     "TMID": 216,
-    "Image": "./../../assets/cricket/images/players/3834.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3834.png"
   },
   {
     "PlayerId": "31",
@@ -7158,7 +7158,7 @@
     "Catches": "16",
     "Stumpings": "0",
     "TMID": 217,
-    "Image": "./../../assets/cricket/images/players/490.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/490.png"
   },
   {
     "PlayerId": "163",
@@ -7191,7 +7191,7 @@
     "Catches": "9",
     "Stumpings": "0",
     "TMID": 218,
-    "Image": "./../../assets/cricket/images/players/872.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/872.png"
   },
   {
     "PlayerId": "0",
@@ -7224,7 +7224,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 219,
-    "Image": "./../../assets/cricket/images/players/83.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/83.png"
   },
   {
     "PlayerId": "829",
@@ -7257,7 +7257,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 220,
-    "Image": "./../../assets/cricket/images/players/223.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/223.png"
   },
   {
     "PlayerId": "0",
@@ -7290,7 +7290,7 @@
     "Catches": "10",
     "Stumpings": "5",
     "TMID": 221,
-    "Image": "./../../assets/cricket/images/players/141.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/141.png"
   },
   {
     "PlayerId": "0",
@@ -7323,7 +7323,7 @@
     "Catches": "12",
     "Stumpings": "0",
     "TMID": 222,
-    "Image": "./../../assets/cricket/images/players/232.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/232.png"
   },
   {
     "PlayerId": "0",
@@ -7356,7 +7356,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 223,
-    "Image": "./../../assets/cricket/images/players/243.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/243.png"
   },
   {
     "PlayerId": "68",
@@ -7389,7 +7389,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 224,
-    "Image": "./../../assets/cricket/images/players/820.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/820.png"
   },
   {
     "PlayerId": "213",
@@ -7422,7 +7422,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 225,
-    "Image": "./../../assets/cricket/images/players/3825.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3825.png"
   },
   {
     "PlayerId": "0",
@@ -7455,7 +7455,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 226,
-    "Image": "./../../assets/cricket/images/players/64.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/64.png"
   },
   {
     "PlayerId": "0",
@@ -7488,7 +7488,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 227,
-    "Image": "./../../assets/cricket/images/players/374.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/374.png"
   },
   {
     "PlayerId": "36",
@@ -7521,7 +7521,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 228,
-    "Image": "./../../assets/cricket/images/players/857.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/857.png"
   },
   {
     "PlayerId": "52",
@@ -7554,7 +7554,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 229,
-    "Image": "./../../assets/cricket/images/players/1117.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1117.png"
   },
   {
     "PlayerId": "0",
@@ -7587,7 +7587,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 230,
-    "Image": "./../../assets/cricket/images/players/35.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/35.png"
   },
   {
     "PlayerId": "0",
@@ -7620,7 +7620,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 231,
-    "Image": "./../../assets/cricket/images/players/75.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/75.png"
   },
   {
     "PlayerId": "0",
@@ -7653,7 +7653,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 232,
-    "Image": "./../../assets/cricket/images/players/194.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/194.png"
   },
   {
     "PlayerId": "0",
@@ -7686,7 +7686,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 233,
-    "Image": "./../../assets/cricket/images/players/275.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/275.png"
   },
   {
     "PlayerId": "183",
@@ -7719,7 +7719,7 @@
     "Catches": "13",
     "Stumpings": "0",
     "TMID": 234,
-    "Image": "./../../assets/cricket/images/players/3644.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3644.png"
   },
   {
     "PlayerId": "0",
@@ -7752,7 +7752,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 235,
-    "Image": "./../../assets/cricket/images/players/133.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/133.png"
   },
   {
     "PlayerId": "0",
@@ -7785,7 +7785,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 236,
-    "Image": "./../../assets/cricket/images/players/150.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/150.png"
   },
   {
     "PlayerId": "0",
@@ -7818,7 +7818,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 237,
-    "Image": "./../../assets/cricket/images/players/322.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/322.png"
   },
   {
     "PlayerId": "0",
@@ -7851,7 +7851,7 @@
     "Catches": "9",
     "Stumpings": "0",
     "TMID": 238,
-    "Image": "./../../assets/cricket/images/players/589.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/589.png"
   },
   {
     "PlayerId": "231",
@@ -7884,7 +7884,7 @@
     "Catches": "12",
     "Stumpings": "0",
     "TMID": 239,
-    "Image": "./../../assets/cricket/images/players/2741.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2741.png"
   },
   {
     "PlayerId": "161",
@@ -7917,7 +7917,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 240,
-    "Image": "./../../assets/cricket/images/players/2746.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2746.png"
   },
   {
     "PlayerId": "584",
@@ -7950,7 +7950,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 241,
-    "Image": "./../../assets/cricket/images/players/8540.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/8540.png"
   },
   {
     "PlayerId": "0",
@@ -7983,7 +7983,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 242,
-    "Image": "./../../assets/cricket/images/players/42.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/42.png"
   },
   {
     "PlayerId": "0",
@@ -8016,7 +8016,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 243,
-    "Image": "./../../assets/cricket/images/players/60.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/60.png"
   },
   {
     "PlayerId": "0",
@@ -8049,7 +8049,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 244,
-    "Image": "./../../assets/cricket/images/players/171.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/171.png"
   },
   {
     "PlayerId": "0",
@@ -8082,7 +8082,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 245,
-    "Image": "./../../assets/cricket/images/players/284.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/284.png"
   },
   {
     "PlayerId": "162",
@@ -8115,7 +8115,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 246,
-    "Image": "./../../assets/cricket/images/players/913.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/913.png"
   },
   {
     "PlayerId": "314",
@@ -8148,7 +8148,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 247,
-    "Image": "./../../assets/cricket/images/players/967.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/967.png"
   },
   {
     "PlayerId": "528",
@@ -8181,7 +8181,7 @@
     "Catches": "9",
     "Stumpings": "0",
     "TMID": 248,
-    "Image": "./../../assets/cricket/images/players/3775.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3775.png"
   },
   {
     "PlayerId": "0",
@@ -8214,7 +8214,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 249,
-    "Image": "./../../assets/cricket/images/players/32.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/32.png"
   },
   {
     "PlayerId": "0",
@@ -8247,7 +8247,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 250,
-    "Image": "./../../assets/cricket/images/players/209.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/209.png"
   },
   {
     "PlayerId": "0",
@@ -8280,7 +8280,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 251,
-    "Image": "./../../assets/cricket/images/players/291.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/291.png"
   },
   {
     "PlayerId": "287",
@@ -8313,7 +8313,7 @@
     "Catches": "9",
     "Stumpings": "0",
     "TMID": 252,
-    "Image": "./../../assets/cricket/images/players/1667.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1667.png"
   },
   {
     "PlayerId": "87",
@@ -8346,7 +8346,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 253,
-    "Image": "./../../assets/cricket/images/players/4951.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4951.png"
   },
   {
     "PlayerId": "599",
@@ -8379,7 +8379,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 254,
-    "Image": "./../../assets/cricket/images/players/1115.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1115.png"
   },
   {
     "PlayerId": "165",
@@ -8412,7 +8412,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 255,
-    "Image": "./../../assets/cricket/images/players/1740.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1740.png"
   },
   {
     "PlayerId": "134",
@@ -8445,7 +8445,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 256,
-    "Image": "./../../assets/cricket/images/players/4572.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4572.png"
   },
   {
     "PlayerId": "538",
@@ -8478,7 +8478,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 257,
-    "Image": "./../../assets/cricket/images/players/6870.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/6870.png"
   },
   {
     "PlayerId": "590",
@@ -8511,7 +8511,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 258,
-    "Image": "./../../assets/cricket/images/players/7779.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/7779.png"
   },
   {
     "PlayerId": "649",
@@ -8544,7 +8544,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 259,
-    "Image": "./../../assets/cricket/images/players/173.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/173.png"
   },
   {
     "PlayerId": "0",
@@ -8577,7 +8577,7 @@
     "Catches": "15",
     "Stumpings": "1",
     "TMID": 260,
-    "Image": "./../../assets/cricket/images/players/268.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/268.png"
   },
   {
     "PlayerId": "469",
@@ -8610,7 +8610,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 261,
-    "Image": "./../../assets/cricket/images/players/288.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/288.png"
   },
   {
     "PlayerId": "0",
@@ -8643,7 +8643,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 262,
-    "Image": "./../../assets/cricket/images/players/412.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/412.png"
   },
   {
     "PlayerId": "184",
@@ -8676,7 +8676,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 263,
-    "Image": "./../../assets/cricket/images/players/2970.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2970.png"
   },
   {
     "PlayerId": "377",
@@ -8709,7 +8709,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 264,
-    "Image": "./../../assets/cricket/images/players/3082.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3082.png"
   },
   {
     "PlayerId": "0",
@@ -8742,7 +8742,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 265,
-    "Image": "./../../assets/cricket/images/players/238.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/238.png"
   },
   {
     "PlayerId": "0",
@@ -8775,7 +8775,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 266,
-    "Image": "./../../assets/cricket/images/players/311.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/311.png"
   },
   {
     "PlayerId": "217",
@@ -8808,7 +8808,7 @@
     "Catches": "11",
     "Stumpings": "0",
     "TMID": 267,
-    "Image": "./../../assets/cricket/images/players/618.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/618.png"
   },
   {
     "PlayerId": "152",
@@ -8841,7 +8841,7 @@
     "Catches": "15",
     "Stumpings": "0",
     "TMID": 268,
-    "Image": "./../../assets/cricket/images/players/3830.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3830.png"
   },
   {
     "PlayerId": "0",
@@ -8874,7 +8874,7 @@
     "Catches": "10",
     "Stumpings": "2",
     "TMID": 269,
-    "Image": "./../../assets/cricket/images/players/145.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/145.png"
   },
   {
     "PlayerId": "0",
@@ -8907,7 +8907,7 @@
     "Catches": "9",
     "Stumpings": "2",
     "TMID": 270,
-    "Image": "./../../assets/cricket/images/players/153.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/153.png"
   },
   {
     "PlayerId": "285",
@@ -8940,7 +8940,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 271,
-    "Image": "./../../assets/cricket/images/players/456.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/456.png"
   },
   {
     "PlayerId": "143",
@@ -8973,7 +8973,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 272,
-    "Image": "./../../assets/cricket/images/players/2722.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2722.png"
   },
   {
     "PlayerId": "546",
@@ -9006,7 +9006,7 @@
     "Catches": "10",
     "Stumpings": "0",
     "TMID": 273,
-    "Image": "./../../assets/cricket/images/players/4649.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4649.png"
   },
   {
     "PlayerId": "0",
@@ -9039,7 +9039,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 274,
-    "Image": "./../../assets/cricket/images/players/11.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/11.png"
   },
   {
     "PlayerId": "113",
@@ -9072,7 +9072,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 275,
-    "Image": "./../../assets/cricket/images/players/168.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/168.png"
   },
   {
     "PlayerId": "0",
@@ -9105,7 +9105,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 276,
-    "Image": "./../../assets/cricket/images/players/231.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/231.png"
   },
   {
     "PlayerId": "0",
@@ -9138,7 +9138,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 277,
-    "Image": "./../../assets/cricket/images/players/272.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/272.png"
   },
   {
     "PlayerId": "0",
@@ -9171,7 +9171,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 278,
-    "Image": "./../../assets/cricket/images/players/293.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/293.png"
   },
   {
     "PlayerId": "674",
@@ -9204,7 +9204,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 279,
-    "Image": "./../../assets/cricket/images/players/869.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/869.png"
   },
   {
     "PlayerId": "130",
@@ -9237,7 +9237,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 280,
-    "Image": "./../../assets/cricket/images/players/5441.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5441.png"
   },
   {
     "PlayerId": "0",
@@ -9270,7 +9270,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 281,
-    "Image": "./../../assets/cricket/images/players/18.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/18.png"
   },
   {
     "PlayerId": "0",
@@ -9303,7 +9303,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 282,
-    "Image": "./../../assets/cricket/images/players/79.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/79.png"
   },
   {
     "PlayerId": "0",
@@ -9336,7 +9336,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 283,
-    "Image": "./../../assets/cricket/images/players/137.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/137.png"
   },
   {
     "PlayerId": "0",
@@ -9369,7 +9369,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 284,
-    "Image": "./../../assets/cricket/images/players/151.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/151.png"
   },
   {
     "PlayerId": "0",
@@ -9402,7 +9402,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 285,
-    "Image": "./../../assets/cricket/images/players/300.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/300.png"
   },
   {
     "PlayerId": "0",
@@ -9435,7 +9435,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 286,
-    "Image": "./../../assets/cricket/images/players/310.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/310.png"
   },
   {
     "PlayerId": "85",
@@ -9468,7 +9468,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 287,
-    "Image": "./../../assets/cricket/images/players/798.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/798.png"
   },
   {
     "PlayerId": "199",
@@ -9501,7 +9501,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 288,
-    "Image": "./../../assets/cricket/images/players/3177.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3177.png"
   },
   {
     "PlayerId": "99",
@@ -9534,7 +9534,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 289,
-    "Image": "./../../assets/cricket/images/players/3746.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3746.png"
   },
   {
     "PlayerId": "0",
@@ -9567,7 +9567,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 290,
-    "Image": "./../../assets/cricket/images/players/74.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/74.png"
   },
   {
     "PlayerId": "0",
@@ -9600,7 +9600,7 @@
     "Catches": "3",
     "Stumpings": "4",
     "TMID": 291,
-    "Image": "./../../assets/cricket/images/players/155.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/155.png"
   },
   {
     "PlayerId": "0",
@@ -9633,7 +9633,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 292,
-    "Image": "./../../assets/cricket/images/players/188.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/188.png"
   },
   {
     "PlayerId": "0",
@@ -9666,7 +9666,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 293,
-    "Image": "./../../assets/cricket/images/players/324.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/324.png"
   },
   {
     "PlayerId": "0",
@@ -9699,7 +9699,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 294,
-    "Image": "./../../assets/cricket/images/players/347.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/347.png"
   },
   {
     "PlayerId": "70",
@@ -9732,7 +9732,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 295,
-    "Image": "./../../assets/cricket/images/players/431.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/431.png"
   },
   {
     "PlayerId": "73",
@@ -9765,7 +9765,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 296,
-    "Image": "./../../assets/cricket/images/players/773.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/773.png"
   },
   {
     "PlayerId": "313",
@@ -9798,7 +9798,7 @@
     "Catches": "8",
     "Stumpings": "0",
     "TMID": 297,
-    "Image": "./../../assets/cricket/images/players/1906.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1906.png"
   },
   {
     "PlayerId": "309",
@@ -9831,7 +9831,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 298,
-    "Image": "./../../assets/cricket/images/players/3646.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3646.png"
   },
   {
     "PlayerId": "588",
@@ -9864,7 +9864,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 299,
-    "Image": "./../../assets/cricket/images/players/4055.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4055.png"
   },
   {
     "PlayerId": "0",
@@ -9897,7 +9897,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 300,
-    "Image": "./../../assets/cricket/images/players/5.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5.png"
   },
   {
     "PlayerId": "0",
@@ -9930,7 +9930,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 301,
-    "Image": "./../../assets/cricket/images/players/22.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/22.png"
   },
   {
     "PlayerId": "0",
@@ -9963,7 +9963,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 302,
-    "Image": "./../../assets/cricket/images/players/29.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/29.png"
   },
   {
     "PlayerId": "0",
@@ -9996,7 +9996,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 303,
-    "Image": "./../../assets/cricket/images/players/142.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/142.png"
   },
   {
     "PlayerId": "0",
@@ -10029,7 +10029,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 304,
-    "Image": "./../../assets/cricket/images/players/228.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/228.png"
   },
   {
     "PlayerId": "0",
@@ -10062,7 +10062,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 305,
-    "Image": "./../../assets/cricket/images/players/254.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/254.png"
   },
   {
     "PlayerId": "0",
@@ -10095,7 +10095,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 306,
-    "Image": "./../../assets/cricket/images/players/328.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/328.png"
   },
   {
     "PlayerId": "646",
@@ -10128,7 +10128,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 307,
-    "Image": "./../../assets/cricket/images/players/594.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/594.png"
   },
   {
     "PlayerId": "80",
@@ -10161,7 +10161,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 308,
-    "Image": "./../../assets/cricket/images/players/971.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/971.png"
   },
   {
     "PlayerId": "75",
@@ -10194,7 +10194,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 309,
-    "Image": "./../../assets/cricket/images/players/1903.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1903.png"
   },
   {
     "PlayerId": "229",
@@ -10227,7 +10227,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 310,
-    "Image": "./../../assets/cricket/images/players/3098.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3098.png"
   },
   {
     "PlayerId": "146",
@@ -10260,7 +10260,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 311,
-    "Image": "./../../assets/cricket/images/players/3766.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3766.png"
   },
   {
     "PlayerId": "597",
@@ -10293,7 +10293,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 312,
-    "Image": "./../../assets/cricket/images/players/5471.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5471.png"
   },
   {
     "PlayerId": "0",
@@ -10326,7 +10326,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 313,
-    "Image": "./../../assets/cricket/images/players/15.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/15.png"
   },
   {
     "PlayerId": "0",
@@ -10359,7 +10359,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 314,
-    "Image": "./../../assets/cricket/images/players/80.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/80.png"
   },
   {
     "PlayerId": "0",
@@ -10392,7 +10392,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 315,
-    "Image": "./../../assets/cricket/images/players/128.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/128.png"
   },
   {
     "PlayerId": "0",
@@ -10425,7 +10425,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 316,
-    "Image": "./../../assets/cricket/images/players/281.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/281.png"
   },
   {
     "PlayerId": "0",
@@ -10458,7 +10458,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 317,
-    "Image": "./../../assets/cricket/images/players/309.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/309.png"
   },
   {
     "PlayerId": "0",
@@ -10491,7 +10491,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 318,
-    "Image": "./../../assets/cricket/images/players/321.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/321.png"
   },
   {
     "PlayerId": "0",
@@ -10524,7 +10524,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 319,
-    "Image": "./../../assets/cricket/images/players/326.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/326.png"
   },
   {
     "PlayerId": "24",
@@ -10557,7 +10557,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 320,
-    "Image": "./../../assets/cricket/images/players/958.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/958.png"
   },
   {
     "PlayerId": "227",
@@ -10590,7 +10590,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 321,
-    "Image": "./../../assets/cricket/images/players/2743.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2743.png"
   },
   {
     "PlayerId": "0",
@@ -10623,7 +10623,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 322,
-    "Image": "./../../assets/cricket/images/players/70.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/70.png"
   },
   {
     "PlayerId": "0",
@@ -10656,7 +10656,7 @@
     "Catches": "11",
     "Stumpings": "2",
     "TMID": 323,
-    "Image": "./../../assets/cricket/images/players/73.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/73.png"
   },
   {
     "PlayerId": "0",
@@ -10689,7 +10689,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 324,
-    "Image": "./../../assets/cricket/images/players/138.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/138.png"
   },
   {
     "PlayerId": "0",
@@ -10722,7 +10722,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 325,
-    "Image": "./../../assets/cricket/images/players/144.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/144.png"
   },
   {
     "PlayerId": "0",
@@ -10755,7 +10755,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 326,
-    "Image": "./../../assets/cricket/images/players/183.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/183.png"
   },
   {
     "PlayerId": "545",
@@ -10788,7 +10788,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 327,
-    "Image": "./../../assets/cricket/images/players/199.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/199.png"
   },
   {
     "PlayerId": "0",
@@ -10821,7 +10821,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 328,
-    "Image": "./../../assets/cricket/images/players/340.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/340.png"
   },
   {
     "PlayerId": "0",
@@ -10854,7 +10854,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 329,
-    "Image": "./../../assets/cricket/images/players/345.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/345.png"
   },
   {
     "PlayerId": "0",
@@ -10887,7 +10887,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 330,
-    "Image": "./../../assets/cricket/images/players/350.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/350.png"
   },
   {
     "PlayerId": "0",
@@ -10920,7 +10920,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 331,
-    "Image": "./../../assets/cricket/images/players/361.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/361.png"
   },
   {
     "PlayerId": "157",
@@ -10953,7 +10953,7 @@
     "Catches": "7",
     "Stumpings": "0",
     "TMID": 332,
-    "Image": "./../../assets/cricket/images/players/434.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/434.png"
   },
   {
     "PlayerId": "283",
@@ -10986,7 +10986,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 333,
-    "Image": "./../../assets/cricket/images/players/690.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/690.png"
   },
   {
     "PlayerId": "37",
@@ -11019,7 +11019,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 334,
-    "Image": "./../../assets/cricket/images/players/1020.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1020.png"
   },
   {
     "PlayerId": "365",
@@ -11052,7 +11052,7 @@
     "Catches": "4",
     "Stumpings": "1",
     "TMID": 335,
-    "Image": "./../../assets/cricket/images/players/2734.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2734.png"
   },
   {
     "PlayerId": "643",
@@ -11085,7 +11085,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 336,
-    "Image": "./../../assets/cricket/images/players/3319.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3319.png"
   },
   {
     "PlayerId": "122",
@@ -11118,7 +11118,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 337,
-    "Image": "./../../assets/cricket/images/players/5396.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5396.png"
   },
   {
     "PlayerId": "0",
@@ -11151,7 +11151,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 338,
-    "Image": "./../../assets/cricket/images/players/114.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/114.png"
   },
   {
     "PlayerId": "0",
@@ -11184,7 +11184,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 339,
-    "Image": "./../../assets/cricket/images/players/234.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/234.png"
   },
   {
     "PlayerId": "0",
@@ -11217,7 +11217,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 340,
-    "Image": "./../../assets/cricket/images/players/237.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/237.png"
   },
   {
     "PlayerId": "0",
@@ -11250,7 +11250,7 @@
     "Catches": "6",
     "Stumpings": "0",
     "TMID": 341,
-    "Image": "./../../assets/cricket/images/players/320.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/320.png"
   },
   {
     "PlayerId": "0",
@@ -11283,7 +11283,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 342,
-    "Image": "./../../assets/cricket/images/players/351.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/351.png"
   },
   {
     "PlayerId": "0",
@@ -11316,7 +11316,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 343,
-    "Image": "./../../assets/cricket/images/players/354.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/354.png"
   },
   {
     "PlayerId": "512",
@@ -11349,7 +11349,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 344,
-    "Image": "./../../assets/cricket/images/players/358.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/358.png"
   },
   {
     "PlayerId": "0",
@@ -11382,7 +11382,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 345,
-    "Image": "./../../assets/cricket/images/players/400.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/400.png"
   },
   {
     "PlayerId": "453",
@@ -11415,7 +11415,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 346,
-    "Image": "./../../assets/cricket/images/players/921.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/921.png"
   },
   {
     "PlayerId": "582",
@@ -11448,7 +11448,7 @@
     "Catches": "7",
     "Stumpings": "2",
     "TMID": 347,
-    "Image": "./../../assets/cricket/images/players/1116.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1116.png"
   },
   {
     "PlayerId": "382",
@@ -11481,7 +11481,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 348,
-    "Image": "./../../assets/cricket/images/players/1616.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1616.png"
   },
   {
     "PlayerId": "0",
@@ -11514,7 +11514,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 349,
-    "Image": "./../../assets/cricket/images/players/1743.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1743.png"
   },
   {
     "PlayerId": "0",
@@ -11547,7 +11547,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 350,
-    "Image": "./../../assets/cricket/images/players/21.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/21.png"
   },
   {
     "PlayerId": "0",
@@ -11580,7 +11580,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 351,
-    "Image": "./../../assets/cricket/images/players/154.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/154.png"
   },
   {
     "PlayerId": "0",
@@ -11613,7 +11613,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 352,
-    "Image": "./../../assets/cricket/images/players/225.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/225.png"
   },
   {
     "PlayerId": "0",
@@ -11646,7 +11646,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 353,
-    "Image": "./../../assets/cricket/images/players/249.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/249.png"
   },
   {
     "PlayerId": "0",
@@ -11679,7 +11679,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 354,
-    "Image": "./../../assets/cricket/images/players/273.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/273.png"
   },
   {
     "PlayerId": "0",
@@ -11712,7 +11712,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 355,
-    "Image": "./../../assets/cricket/images/players/312.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/312.png"
   },
   {
     "PlayerId": "0",
@@ -11745,7 +11745,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 356,
-    "Image": "./../../assets/cricket/images/players/332.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/332.png"
   },
   {
     "PlayerId": "0",
@@ -11778,7 +11778,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 357,
-    "Image": "./../../assets/cricket/images/players/334.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/334.png"
   },
   {
     "PlayerId": "0",
@@ -11811,7 +11811,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 358,
-    "Image": "./../../assets/cricket/images/players/405.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/405.png"
   },
   {
     "PlayerId": "0",
@@ -11844,7 +11844,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 359,
-    "Image": "./../../assets/cricket/images/players/414.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/414.png"
   },
   {
     "PlayerId": "297",
@@ -11877,7 +11877,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 360,
-    "Image": "./../../assets/cricket/images/players/441.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/441.png"
   },
   {
     "PlayerId": "0",
@@ -11910,7 +11910,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 361,
-    "Image": "./../../assets/cricket/images/players/647.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/647.png"
   },
   {
     "PlayerId": "482",
@@ -11943,7 +11943,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 362,
-    "Image": "./../../assets/cricket/images/players/811.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/811.png"
   },
   {
     "PlayerId": "0",
@@ -11976,7 +11976,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 363,
-    "Image": "./../../assets/cricket/images/players/1093.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1093.png"
   },
   {
     "PlayerId": "76",
@@ -12009,7 +12009,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 364,
-    "Image": "./../../assets/cricket/images/players/1304.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1304.png"
   },
   {
     "PlayerId": "144",
@@ -12042,7 +12042,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 365,
-    "Image": "./../../assets/cricket/images/players/1737.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1737.png"
   },
   {
     "PlayerId": "117",
@@ -12075,7 +12075,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 366,
-    "Image": "./../../assets/cricket/images/players/3101.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3101.png"
   },
   {
     "PlayerId": "0",
@@ -12108,7 +12108,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 367,
-    "Image": "./../../assets/cricket/images/players/37.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/37.png"
   },
   {
     "PlayerId": "0",
@@ -12141,7 +12141,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 368,
-    "Image": "./../../assets/cricket/images/players/43.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/43.png"
   },
   {
     "PlayerId": "0",
@@ -12174,7 +12174,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 369,
-    "Image": "./../../assets/cricket/images/players/51.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/51.png"
   },
   {
     "PlayerId": "0",
@@ -12207,7 +12207,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 370,
-    "Image": "./../../assets/cricket/images/players/98.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/98.png"
   },
   {
     "PlayerId": "0",
@@ -12240,7 +12240,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 371,
-    "Image": "./../../assets/cricket/images/players/129.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/129.png"
   },
   {
     "PlayerId": "0",
@@ -12273,7 +12273,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 372,
-    "Image": "./../../assets/cricket/images/players/132.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/132.png"
   },
   {
     "PlayerId": "0",
@@ -12306,7 +12306,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 373,
-    "Image": "./../../assets/cricket/images/players/149.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/149.png"
   },
   {
     "PlayerId": "0",
@@ -12339,7 +12339,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 374,
-    "Image": "./../../assets/cricket/images/players/279.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/279.png"
   },
   {
     "PlayerId": "304",
@@ -12372,7 +12372,7 @@
     "Catches": "5",
     "Stumpings": "0",
     "TMID": 375,
-    "Image": "./../../assets/cricket/images/players/314.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/314.png"
   },
   {
     "PlayerId": "0",
@@ -12405,7 +12405,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 376,
-    "Image": "./../../assets/cricket/images/players/360.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/360.png"
   },
   {
     "PlayerId": "0",
@@ -12438,7 +12438,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 377,
-    "Image": "./../../assets/cricket/images/players/378.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/378.png"
   },
   {
     "PlayerId": "494",
@@ -12471,7 +12471,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 378,
-    "Image": "./../../assets/cricket/images/players/590.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/590.png"
   },
   {
     "PlayerId": "232",
@@ -12504,7 +12504,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 379,
-    "Image": "./../../assets/cricket/images/players/1752.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1752.png"
   },
   {
     "PlayerId": "310",
@@ -12537,7 +12537,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 380,
-    "Image": "./../../assets/cricket/images/players/1842.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1842.png"
   },
   {
     "PlayerId": "90",
@@ -12570,7 +12570,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 381,
-    "Image": "./../../assets/cricket/images/players/2758.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2758.png"
   },
   {
     "PlayerId": "539",
@@ -12603,7 +12603,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 382,
-    "Image": "./../../assets/cricket/images/players/3257.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3257.png"
   },
   {
     "PlayerId": "202",
@@ -12636,7 +12636,7 @@
     "Catches": "3",
     "Stumpings": "4",
     "TMID": 383,
-    "Image": "./../../assets/cricket/images/players/3869.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3869.png"
   },
   {
     "PlayerId": "0",
@@ -12669,7 +12669,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 384,
-    "Image": "./../../assets/cricket/images/players/3887.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3887.png"
   },
   {
     "PlayerId": "97",
@@ -12702,7 +12702,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 385,
-    "Image": "./../../assets/cricket/images/players/4942.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4942.png"
   },
   {
     "PlayerId": "0",
@@ -12735,7 +12735,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 386,
-    "Image": "./../../assets/cricket/images/players/13.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/13.png"
   },
   {
     "PlayerId": "0",
@@ -12768,7 +12768,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 387,
-    "Image": "./../../assets/cricket/images/players/81.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/81.png"
   },
   {
     "PlayerId": "0",
@@ -12801,7 +12801,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 388,
-    "Image": "./../../assets/cricket/images/players/205.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/205.png"
   },
   {
     "PlayerId": "0",
@@ -12834,7 +12834,7 @@
     "Catches": "2",
     "Stumpings": "2",
     "TMID": 389,
-    "Image": "./../../assets/cricket/images/players/208.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/208.png"
   },
   {
     "PlayerId": "0",
@@ -12867,7 +12867,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 390,
-    "Image": "./../../assets/cricket/images/players/266.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/266.png"
   },
   {
     "PlayerId": "0",
@@ -12900,7 +12900,7 @@
     "Catches": "5",
     "Stumpings": "4",
     "TMID": 391,
-    "Image": "./../../assets/cricket/images/players/316.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/316.png"
   },
   {
     "PlayerId": "0",
@@ -12933,7 +12933,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 392,
-    "Image": "./../../assets/cricket/images/players/317.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/317.png"
   },
   {
     "PlayerId": "0",
@@ -12966,7 +12966,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 393,
-    "Image": "./../../assets/cricket/images/players/344.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/344.png"
   },
   {
     "PlayerId": "0",
@@ -12999,7 +12999,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 394,
-    "Image": "./../../assets/cricket/images/players/359.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/359.png"
   },
   {
     "PlayerId": "491",
@@ -13032,7 +13032,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 395,
-    "Image": "./../../assets/cricket/images/players/393.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/393.png"
   },
   {
     "PlayerId": "0",
@@ -13065,7 +13065,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 396,
-    "Image": "./../../assets/cricket/images/players/511.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/511.png"
   },
   {
     "PlayerId": "129",
@@ -13098,7 +13098,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 397,
-    "Image": "./../../assets/cricket/images/players/1276.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1276.png"
   },
   {
     "PlayerId": "266",
@@ -13131,7 +13131,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 398,
-    "Image": "./../../assets/cricket/images/players/1309.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1309.png"
   },
   {
     "PlayerId": "0",
@@ -13164,7 +13164,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 399,
-    "Image": "./../../assets/cricket/images/players/2736.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2736.png"
   },
   {
     "PlayerId": "121",
@@ -13197,7 +13197,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 400,
-    "Image": "./../../assets/cricket/images/players/3013.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3013.png"
   },
   {
     "PlayerId": "137",
@@ -13230,7 +13230,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 401,
-    "Image": "./../../assets/cricket/images/players/5436.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5436.png"
   },
   {
     "PlayerId": "0",
@@ -13263,7 +13263,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 402,
-    "Image": "./../../assets/cricket/images/players/23.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/23.png"
   },
   {
     "PlayerId": "0",
@@ -13296,7 +13296,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 403,
-    "Image": "./../../assets/cricket/images/players/68.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/68.png"
   },
   {
     "PlayerId": "0",
@@ -13329,7 +13329,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 404,
-    "Image": "./../../assets/cricket/images/players/122.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/122.png"
   },
   {
     "PlayerId": "454",
@@ -13362,7 +13362,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 405,
-    "Image": "./../../assets/cricket/images/players/174.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/174.png"
   },
   {
     "PlayerId": "0",
@@ -13395,7 +13395,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 406,
-    "Image": "./../../assets/cricket/images/players/214.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/214.png"
   },
   {
     "PlayerId": "0",
@@ -13428,7 +13428,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 407,
-    "Image": "./../../assets/cricket/images/players/239.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/239.png"
   },
   {
     "PlayerId": "0",
@@ -13461,7 +13461,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 408,
-    "Image": "./../../assets/cricket/images/players/338.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/338.png"
   },
   {
     "PlayerId": "486",
@@ -13494,7 +13494,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 409,
-    "Image": "./../../assets/cricket/images/players/353.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/353.png"
   },
   {
     "PlayerId": "0",
@@ -13527,7 +13527,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 410,
-    "Image": "./../../assets/cricket/images/players/377.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/377.png"
   },
   {
     "PlayerId": "0",
@@ -13560,7 +13560,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 411,
-    "Image": "./../../assets/cricket/images/players/404.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/404.png"
   },
   {
     "PlayerId": "4",
@@ -13593,7 +13593,7 @@
     "Catches": null,
     "Stumpings": null,
     "TMID": 412,
-    "Image": "./../../assets/cricket/images/players/937.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/937.png"
   },
   {
     "PlayerId": "0",
@@ -13626,7 +13626,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 413,
-    "Image": "./../../assets/cricket/images/players/1105.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1105.png"
   },
   {
     "PlayerId": "0",
@@ -13659,7 +13659,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 414,
-    "Image": "./../../assets/cricket/images/players/1111.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1111.png"
   },
   {
     "PlayerId": "264",
@@ -13692,7 +13692,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 415,
-    "Image": "./../../assets/cricket/images/players/1707.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1707.png"
   },
   {
     "PlayerId": "0",
@@ -13725,7 +13725,7 @@
     "Catches": "2",
     "Stumpings": "1",
     "TMID": 416,
-    "Image": "./../../assets/cricket/images/players/1750.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1750.png"
   },
   {
     "PlayerId": "0",
@@ -13758,7 +13758,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 417,
-    "Image": "./../../assets/cricket/images/players/2745.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2745.png"
   },
   {
     "PlayerId": "634",
@@ -13791,7 +13791,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 418,
-    "Image": "./../../assets/cricket/images/players/2942.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2942.png"
   },
   {
     "PlayerId": "0",
@@ -13824,7 +13824,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 419,
-    "Image": "./../../assets/cricket/images/players/3180.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3180.png"
   },
   {
     "PlayerId": "522",
@@ -13857,7 +13857,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 420,
-    "Image": "./../../assets/cricket/images/players/4518.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4518.png"
   },
   {
     "PlayerId": "0",
@@ -13890,7 +13890,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 421,
-    "Image": "./../../assets/cricket/images/players/82.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/82.png"
   },
   {
     "PlayerId": "0",
@@ -13923,7 +13923,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 422,
-    "Image": "./../../assets/cricket/images/players/136.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/136.png"
   },
   {
     "PlayerId": "0",
@@ -13956,7 +13956,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 423,
-    "Image": "./../../assets/cricket/images/players/319.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/319.png"
   },
   {
     "PlayerId": "0",
@@ -13989,7 +13989,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 424,
-    "Image": "./../../assets/cricket/images/players/325.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/325.png"
   },
   {
     "PlayerId": "0",
@@ -14022,7 +14022,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 425,
-    "Image": "./../../assets/cricket/images/players/337.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/337.png"
   },
   {
     "PlayerId": "0",
@@ -14055,7 +14055,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 426,
-    "Image": "./../../assets/cricket/images/players/348.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/348.png"
   },
   {
     "PlayerId": "29",
@@ -14088,7 +14088,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 427,
-    "Image": "./../../assets/cricket/images/players/1521.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1521.png"
   },
   {
     "PlayerId": "0",
@@ -14121,7 +14121,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 428,
-    "Image": "./../../assets/cricket/images/players/1744.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1744.png"
   },
   {
     "PlayerId": "147",
@@ -14154,7 +14154,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 429,
-    "Image": "./../../assets/cricket/images/players/2732.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2732.png"
   },
   {
     "PlayerId": "0",
@@ -14187,7 +14187,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 430,
-    "Image": "./../../assets/cricket/images/players/4960.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4960.png"
   },
   {
     "PlayerId": "0",
@@ -14220,7 +14220,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 431,
-    "Image": "./../../assets/cricket/images/players/2.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2.png"
   },
   {
     "PlayerId": "0",
@@ -14253,7 +14253,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 432,
-    "Image": "./../../assets/cricket/images/players/134.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/134.png"
   },
   {
     "PlayerId": "0",
@@ -14286,7 +14286,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 433,
-    "Image": "./../../assets/cricket/images/players/235.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/235.png"
   },
   {
     "PlayerId": "0",
@@ -14319,7 +14319,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 434,
-    "Image": "./../../assets/cricket/images/players/262.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/262.png"
   },
   {
     "PlayerId": "0",
@@ -14352,7 +14352,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 435,
-    "Image": "./../../assets/cricket/images/players/278.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/278.png"
   },
   {
     "PlayerId": "475",
@@ -14385,7 +14385,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 436,
-    "Image": "./../../assets/cricket/images/players/294.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/294.png"
   },
   {
     "PlayerId": "495",
@@ -14418,7 +14418,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 437,
-    "Image": "./../../assets/cricket/images/players/333.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/333.png"
   },
   {
     "PlayerId": "0",
@@ -14451,7 +14451,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 438,
-    "Image": "./../../assets/cricket/images/players/336.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/336.png"
   },
   {
     "PlayerId": "0",
@@ -14484,7 +14484,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 439,
-    "Image": "./../../assets/cricket/images/players/356.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/356.png"
   },
   {
     "PlayerId": "0",
@@ -14517,7 +14517,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 440,
-    "Image": "./../../assets/cricket/images/players/357.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/357.png"
   },
   {
     "PlayerId": "0",
@@ -14550,7 +14550,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 441,
-    "Image": "./../../assets/cricket/images/players/376.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/376.png"
   },
   {
     "PlayerId": "0",
@@ -14583,7 +14583,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 442,
-    "Image": "./../../assets/cricket/images/players/379.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/379.png"
   },
   {
     "PlayerId": "0",
@@ -14616,7 +14616,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 443,
-    "Image": "./../../assets/cricket/images/players/384.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/384.png"
   },
   {
     "PlayerId": "0",
@@ -14649,7 +14649,7 @@
     "Catches": "4",
     "Stumpings": "0",
     "TMID": 444,
-    "Image": "./../../assets/cricket/images/players/392.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/392.png"
   },
   {
     "PlayerId": "0",
@@ -14682,7 +14682,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 445,
-    "Image": "./../../assets/cricket/images/players/398.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/398.png"
   },
   {
     "PlayerId": "0",
@@ -14715,7 +14715,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 446,
-    "Image": "./../../assets/cricket/images/players/457.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/457.png"
   },
   {
     "PlayerId": "277",
@@ -14748,7 +14748,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 447,
-    "Image": "./../../assets/cricket/images/players/503.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/503.png"
   },
   {
     "PlayerId": "0",
@@ -14781,7 +14781,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 448,
-    "Image": "./../../assets/cricket/images/players/858.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/858.png"
   },
   {
     "PlayerId": "0",
@@ -14814,7 +14814,7 @@
     "Catches": "3",
     "Stumpings": "0",
     "TMID": 449,
-    "Image": "./../../assets/cricket/images/players/918.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/918.png"
   },
   {
     "PlayerId": "551",
@@ -14847,7 +14847,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 450,
-    "Image": "./../../assets/cricket/images/players/942.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/942.png"
   },
   {
     "PlayerId": "159",
@@ -14880,7 +14880,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 451,
-    "Image": "./../../assets/cricket/images/players/2965.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2965.png"
   },
   {
     "PlayerId": "635",
@@ -14913,7 +14913,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 452,
-    "Image": "./../../assets/cricket/images/players/3027.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3027.png"
   },
   {
     "PlayerId": "548",
@@ -14946,7 +14946,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 453,
-    "Image": "./../../assets/cricket/images/players/3188.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3188.png"
   },
   {
     "PlayerId": "59",
@@ -14979,7 +14979,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 454,
-    "Image": "./../../assets/cricket/images/players/3781.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3781.png"
   },
   {
     "PlayerId": "26",
@@ -15012,7 +15012,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 455,
-    "Image": "./../../assets/cricket/images/players/3882.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3882.png"
   },
   {
     "PlayerId": "581",
@@ -15045,7 +15045,7 @@
     "Catches": "0",
     "Stumpings": "2",
     "TMID": 456,
-    "Image": "./../../assets/cricket/images/players/4305.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4305.png"
   },
   {
     "PlayerId": "88",
@@ -15078,7 +15078,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 457,
-    "Image": "./../../assets/cricket/images/players/4944.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4944.png"
   },
   {
     "PlayerId": "172",
@@ -15111,7 +15111,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 458,
-    "Image": "./../../assets/cricket/images/players/5437.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5437.png"
   },
   {
     "PlayerId": "527",
@@ -15144,7 +15144,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 459,
-    "Image": "./../../assets/cricket/images/players/6966.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/6966.png"
   },
   {
     "PlayerId": "0",
@@ -15177,7 +15177,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 460,
-    "Image": "./../../assets/cricket/images/players/161.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/161.png"
   },
   {
     "PlayerId": "448",
@@ -15210,7 +15210,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 461,
-    "Image": "./../../assets/cricket/images/players/207.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/207.png"
   },
   {
     "PlayerId": "0",
@@ -15243,7 +15243,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 462,
-    "Image": "./../../assets/cricket/images/players/277.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/277.png"
   },
   {
     "PlayerId": "0",
@@ -15276,7 +15276,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 463,
-    "Image": "./../../assets/cricket/images/players/289.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/289.png"
   },
   {
     "PlayerId": "0",
@@ -15309,7 +15309,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 464,
-    "Image": "./../../assets/cricket/images/players/318.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/318.png"
   },
   {
     "PlayerId": "0",
@@ -15342,7 +15342,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 465,
-    "Image": "./../../assets/cricket/images/players/329.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/329.png"
   },
   {
     "PlayerId": "0",
@@ -15375,7 +15375,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 466,
-    "Image": "./../../assets/cricket/images/players/341.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/341.png"
   },
   {
     "PlayerId": "0",
@@ -15408,7 +15408,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 467,
-    "Image": "./../../assets/cricket/images/players/375.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/375.png"
   },
   {
     "PlayerId": "0",
@@ -15441,7 +15441,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 468,
-    "Image": "./../../assets/cricket/images/players/380.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/380.png"
   },
   {
     "PlayerId": "0",
@@ -15474,7 +15474,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 469,
-    "Image": "./../../assets/cricket/images/players/387.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/387.png"
   },
   {
     "PlayerId": "0",
@@ -15507,7 +15507,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 470,
-    "Image": "./../../assets/cricket/images/players/390.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/390.png"
   },
   {
     "PlayerId": "0",
@@ -15540,7 +15540,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 471,
-    "Image": "./../../assets/cricket/images/players/401.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/401.png"
   },
   {
     "PlayerId": "0",
@@ -15573,7 +15573,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 472,
-    "Image": "./../../assets/cricket/images/players/407.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/407.png"
   },
   {
     "PlayerId": "219",
@@ -15606,7 +15606,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 473,
-    "Image": "./../../assets/cricket/images/players/1555.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/1555.png"
   },
   {
     "PlayerId": "530",
@@ -15639,7 +15639,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 474,
-    "Image": "./../../assets/cricket/images/players/3770.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3770.png"
   },
   {
     "PlayerId": "92",
@@ -15672,7 +15672,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 475,
-    "Image": "./../../assets/cricket/images/players/4946.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/4946.png"
   },
   {
     "PlayerId": "151",
@@ -15705,7 +15705,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 476,
-    "Image": "./../../assets/cricket/images/players/5438.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5438.png"
   },
   {
     "PlayerId": "67",
@@ -15738,7 +15738,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 477,
-    "Image": "./../../assets/cricket/images/players/176.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/176.png"
   },
   {
     "PlayerId": "0",
@@ -15771,7 +15771,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 478,
-    "Image": "./../../assets/cricket/images/players/204.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/204.png"
   },
   {
     "PlayerId": "0",
@@ -15804,7 +15804,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 479,
-    "Image": "./../../assets/cricket/images/players/330.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/330.png"
   },
   {
     "PlayerId": "0",
@@ -15837,7 +15837,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 480,
-    "Image": "./../../assets/cricket/images/players/335.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/335.png"
   },
   {
     "PlayerId": "0",
@@ -15870,7 +15870,7 @@
     "Catches": "2",
     "Stumpings": "0",
     "TMID": 481,
-    "Image": "./../../assets/cricket/images/players/383.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/383.png"
   },
   {
     "PlayerId": "0",
@@ -15903,7 +15903,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 482,
-    "Image": "./../../assets/cricket/images/players/385.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/385.png"
   },
   {
     "PlayerId": "249",
@@ -15936,7 +15936,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 483,
-    "Image": "./../../assets/cricket/images/players/391.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/391.png"
   },
   {
     "PlayerId": "609",
@@ -15969,7 +15969,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 484,
-    "Image": "./../../assets/cricket/images/players/588.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/588.png"
   },
   {
     "PlayerId": "315",
@@ -16002,7 +16002,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 485,
-    "Image": "./../../assets/cricket/images/players/2749.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/2749.png"
   },
   {
     "PlayerId": "187",
@@ -16035,7 +16035,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 486,
-    "Image": "./../../assets/cricket/images/players/3226.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3226.png"
   },
   {
     "PlayerId": "290",
@@ -16068,7 +16068,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 487,
-    "Image": "./../../assets/cricket/images/players/3309.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3309.png"
   },
   {
     "PlayerId": "573",
@@ -16101,7 +16101,7 @@
     "Catches": "1",
     "Stumpings": "0",
     "TMID": 488,
-    "Image": "./../../assets/cricket/images/players/3318.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3318.png"
   },
   {
     "PlayerId": "517",
@@ -16134,7 +16134,7 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 489,
-    "Image": "./../../assets/cricket/images/players/3777.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/3777.png"
   },
   {
     "PlayerId": "209",
@@ -16167,6 +16167,8 @@
     "Catches": "0",
     "Stumpings": "0",
     "TMID": 490,
-    "Image": "./../../assets/cricket/images/players/5439.png"
+    "Image": "http://192.168.29.168:8080/images/cricket-players/5439.png"
   }
 ]
+
+module.exports = allCricketPlayers;
