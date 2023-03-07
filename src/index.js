@@ -15,7 +15,7 @@ app.use('/data/cricket/player-stats',express.static(path.resolve(__dirname, 'ass
 
 
 //routes
-app.use('/cricket', cricketRouter);
+app.use('/api/cricket', cricketRouter);
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
