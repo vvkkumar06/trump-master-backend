@@ -1,26 +1,28 @@
 const _ = require('lodash');
-const transformGalleryCardStateToList = (data, playersApiData) => {
-  let tempData = _.cloneDeep(data);
-  let galleryItems = [];
-  Object.keys(tempData).forEach(key => {
-    for(let i=0; i<tempData[key].count; i++) {
-      galleryItems.push(playersApiData.find(item => item.TMID == key));
-    }
+
+const transformToCardData = (database, playersInfo) => {
+  const db = _.cloneDeep(database);
+  const playersData = _.cloneDeep(playersInfo);
+  console.log(playersInfo.playingCards)
+  let backupCards = [];
+
+  db.backupCards.forEach((tmid) =>{
+   let card = playersData.find(item => item.TMID == tmid);
+   if(card) {
+     backupCards.push(card);
+   }
   });
-  return galleryItems;
-}
-
-
-const transformTeamCardsStateToList = (data, playersApiData) => {
-  const team = {};
-  for(let key in data) {
-     let foundPlayer = playersApiData.find(item => item.TMID == data[key]);
-     team[key] = foundPlayer ? foundPlayer : {}
+  console.log('1==>', db.playingCards)
+  for(let key in db.playingCards) {
+    let foundPlayer = playersData.find(item => item.TMID == db.playingCards[key]);
+    db.playingCards[key] = foundPlayer ? foundPlayer : {}
   }
-  return team;
+  return {
+    backupCards,
+    playingCards: db.playingCards
+  }
 }
 
 module.exports = {
-  transformGalleryCardStateToList,
-  transformTeamCardsStateToList,
+  transformToCardData
 }
