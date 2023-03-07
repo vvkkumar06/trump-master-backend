@@ -12,7 +12,6 @@ const transformToCardData = (database, playersInfo) => {
      backupCards.push(card);
    }
   });
-  console.log('1==>', db.playingCards)
   for(let key in db.playingCards) {
     let foundPlayer = playersData.find(item => item.TMID == db.playingCards[key]);
     db.playingCards[key] = foundPlayer ? foundPlayer : {}
