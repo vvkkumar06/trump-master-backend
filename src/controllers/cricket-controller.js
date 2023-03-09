@@ -9,7 +9,7 @@ const playersData = require('./../assets/cricket/players/stats/cricket-players')
 
 
 router.get('/collection', (req, res) =>{ 
-  res.json(db)
+  res.json(db())
 });
 
 
