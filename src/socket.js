@@ -19,9 +19,8 @@ module.exports = (io) => {
         io.to(room).timeout(5000).emit("start", undefined, (err, responses) => {
           if(!err) {
             console.log(responses);
-            if(responses.length === 2 && responses[0] !== responses[1]) {
-              io.to(room).emit('question1', 'Strike Rate', (err, responses) => {
-                //calcualte win loss and let client know who won and who loss
+            if(responses.length === 2 && responses[0].socketId !== responses[1].socketId) {
+              io.to(room).emit('pre-game', responses, (err, responses) => {
                 
               })
             }
