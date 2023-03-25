@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const { Server } = require('socket.io');
 const { createServer } =  require("http");
 const cricketRouter = require('./controllers/cricket-controller');
-const socketSetup = require('./socket');
+const {setupGames} = require('./setup');
 
 
 const app = express();
@@ -28,18 +28,13 @@ app.get('/', (req, res) => {
 const httpServer = createServer(app);
 
 
-// app.listen(8080, (err) => {
-//   if(err) {
-//     console.log(err);
-//   } else {
-//     console.log('Listening on port: 8080')
-//   }
-// })
-
 const io = new Server(httpServer, {cors: {
   origin: "*",
 }})
 
-socketSetup(io);
+io.on('connection', (socket) => {
+  console.log('connected:-', socket.id);
+  setupGames(io, socket);
+});
 
 httpServer.listen(8080);

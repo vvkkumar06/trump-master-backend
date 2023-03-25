@@ -16,12 +16,32 @@ module.exports = (io) => {
       } else {
         const room = availableCricketRooms(io);
         socket.join(room);
-        io.to(room).timeout(5000).emit("start", undefined, (err, responses) => {
+        let roomDetails  = {room};
+        io.to(room).timeout(5000).emit("start", roomDetails, (err, responses) => {
           if(!err) {
-            console.log(responses);
-            if(responses.length === 2 && responses[0].socketId !== responses[1].socketId) {
-              io.to(room).emit('pre-game', responses, (err, responses) => {
-                
+            if(responses.length === 2 && responses[0].id !== responses[1].id) {
+              io.to(room).emit('pre-game', responses);
+              io.on('game-loaded', (args,callback) =>{
+                let question1 = '';
+                let question2 = '';
+                io.to(room).emit('question1', question1);
+                io.on('answer1', (args, callback) =>{
+                  //verify winner
+                  //set winner on server
+                  io.to(room).emit('question2', question2);
+                  io.on('answer2',  (args, callback) => {
+                    //verify if winner in first 2 round
+                    io.to(room).emit('question3');
+                    io.on('answer3', (args, callback) =>{
+                      //decide winnner
+                      let winnerData = {}
+                      io.to(room).emit('show-winner', winnerData);
+                      io.on('card-removed', (args, callback) => {
+                        //update database
+                      })
+                    })
+                  })
+                } )
               })
             }
           }
