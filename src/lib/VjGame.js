@@ -8,6 +8,7 @@ class VjGame {
         customEvents: {},
         updateGameStateOnTimeout: () => { },
         verifyWinState: () => {},
+        modifyRoundInfo: () => {}, // hook to be called before every request for move
         moveType: MOVE_TYPE.ALTERNATE,
         timePerRound: 10000
     }
@@ -22,6 +23,7 @@ class VjGame {
         this.verifyWinState = options.verifyWinState;
         this.moveType = options.moveType;
         this.timePerRound = options.timePerRound;
+        this.modifyRoundInfo = options.modifyRoundInfo;
 
         //Will be set once game starts
         this.roomName = undefined;
@@ -230,8 +232,8 @@ class VjGame {
         clearTimer(this.roomName, this.client.id);
         updateGameState(this.roomName, this.client.id, gameState ? gameState : this.gameState, this.server, this.verifyWinState);
         if(!isTimerRunning(this.roomName)) {
-            requestMove(this.roomName, this.server, this.moveType);
-            createTimer(this.roomName, this.server, this.timePerRound, this.updateGameStateOnTimeout, this.moveType, this.verifyWinState);
+            requestMove(this);
+            createTimer(this);
         }  
     }
 }

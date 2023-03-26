@@ -53,7 +53,8 @@ const initializePlayer = (roomName, clientId, clientInfo) => {
     info(roomName, `Intializing players`);
     if (!rooms[roomName]) {
         rooms[roomName] = {
-            players: {}
+            players: {},
+            roundInfo: {}
         };
     }
     if (rooms[roomName] && !rooms[roomName]['players']) {
@@ -75,7 +76,7 @@ const updateGameState = (roomName, clientId, gameState, server, verifyWinState) 
 
     rooms[roomName]['gameState'][clientId] = _.merge(rooms[roomName]['gameState'][clientId], gameState);
     if (verifyWinState) {
-        const winner = verifyWinState(rooms[roomName]['gameState'], rooms[roomName].round);
+        const winner = verifyWinState(rooms[roomName]['gameState'], rooms[roomName].round, rooms[roomName].roundInfo);
         if (winner) {
             rooms[roomName].finished = true;
             info(roomName, `game-status: Winner: - ${winner}`)
@@ -128,7 +129,7 @@ const getClientIdsFromTurn = (roomName) => {
     return [rooms[roomName]['players'][turn]];
 };
 
-const createTimer = (roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState) => {
+const createTimer = ({roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState, modifyRoundInfo}) => {
     info(roomName, `Creating timer`);
     if (!roomsTimer[roomName]) {
         roomsTimer[roomName] = {};
@@ -150,8 +151,8 @@ const createTimer = (roomName, server, timePerRound, updateGameStateOnTimeout, m
             );
             clearTimer(roomName, clientId);
             if (!isTimerRunning(roomName) && !rooms[roomName].finished) {
-                requestMove(roomName, server, moveType);
-                createTimer(roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState);
+                requestMove({roomName, server, moveType, modifyRoundInfo});
+                createTimer({roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState});
             }
         }, timePerRound);
     })
@@ -170,11 +171,13 @@ const clearTimer = (roomName, clientId) => {
     }
 }
 
-const requestMove = (roomName, server, moveType) => {
+const requestMove = ({roomName, server, moveType, modifyRoundInfo}) => {
     if (!rooms[roomName].finished) {
         info(roomName, `Requesting a move`);
         setCurrentTurn(roomName, moveType);
-        server.in(roomName).emit('request-move', { nextRound: rooms[roomName].round });
+        modifyRoundInfo && modifyRoundInfo(rooms[roomName].roundInfo);
+        const requestMovePayload = { nextRound: rooms[roomName].round, roundInfo: rooms[roomName].roundInfo};
+        server.in(roomName).emit('request-move', requestMovePayload);
     }
 }
 

@@ -1,7 +1,12 @@
 const { VjGame } = require("./lib/VjGame");
 const logger = require('./lib/logger');
+const {cricketQuestions} = require('./data/cricket-metadata');
+const stats = require('./assets/cricket/players/stats/cricket-players');
+
+
 
 function setupGames(io, socket) {
+
   let roomSize = 2;
   logger.success('***************** Setting up new connection ***************')
   /***
@@ -10,7 +15,7 @@ function setupGames(io, socket) {
    *    move: null
    *  }
    */
-  // Auto Move logc for a client
+  // Auto Move logic for a client
   /**
    * gameState is for a single client
    * @param {*} gameState  a game state for a client which got timed out
@@ -29,9 +34,9 @@ function setupGames(io, socket) {
    * @param {*} round Current Round
    * @returns Return clients array if it is final winner otherwise return undefined or false
    */
-  const verifyWinState = (state, round) => {
+  const verifyWinState = (state, round, roundInfo) => {
     const clients = Object.keys(state);
-    const roundWinner = getWinnerClient(state, clients, round);
+    const roundWinner = getRoundWinner(state, clients, round, roundInfo);
     if (!state[clients[0]]['result']) {
       state[clients[0]]['result'] = [];
     }
@@ -51,9 +56,9 @@ function setupGames(io, socket) {
     return getFinalWinner(state, clients[0], clients[1], round);
   }
 
-  const getWinnerClient = (state, clients, round) => {
+  const getRoundWinner = (state, clients, round, roundInfo) => {
     if (state[clients[0]]['move'] && state[clients[1]]['move'] && state[clients[0]]['move'][round] && state[clients[1]]['move'][round]) {
-      if (getCardPropFromId(state[clients[0]]['move'][round]) > getCardPropFromId(state[clients[1]]['move'][round])) {
+      if (getCardPropFromId(state[clients[0]]['move'][round], roundInfo) > getCardPropFromId(state[clients[1]]['move'][round], roundInfo)) {
         return [clients[0]]
       } else if (getCardPropFromId(state[clients[0]]['move'][round]) < getCardPropFromId(state[clients[1]]['move'][round])) {
         return [clients[1]]
@@ -95,7 +100,20 @@ function setupGames(io, socket) {
     return undefined;
   }
 
-  const getCardPropFromId = (value) => value;
+  const getCardPropFromId = (value, roundInfo) => {
+    const card = stats.find(player => String(player.TMID) === String(value));
+    return card[Object.keys(roundInfo.question)[0]];
+  }
+
+  const modifyRoundInfo = (roundInfo) => {
+    const random = Math.floor(Math.random()*13);
+    const fields = Object.keys(cricketQuestions);
+    const randomField = fields[random];
+    roundInfo['question'] = {
+        [randomField]: cricketQuestions[randomField]
+      }
+
+  }
 
   const cricketGame = new VjGame(io, socket,
     {
@@ -103,6 +121,7 @@ function setupGames(io, socket) {
       name: 'cricket',
       updateGameStateOnTimeout,
       verifyWinState,
+      modifyRoundInfo,
       timePerRound: 30000,
       moveType: 'ALL'
     }
