@@ -78,6 +78,7 @@ const updateGameState = (roomName, clientId, gameState, server, verifyWinState) 
         const winner = verifyWinState(rooms[roomName]['gameState'], rooms[roomName].round);
         if (winner) {
             rooms[roomName].finished = true;
+            info(roomName, `game-status: Winner: - ${winner}`)
             server && server.in(roomName).emit('game-status', {
                 gameState: rooms[roomName].gameState,
                 winner: winner
@@ -87,6 +88,7 @@ const updateGameState = (roomName, clientId, gameState, server, verifyWinState) 
             }, 2000);
             clearTimeout(t);
         } else {
+            info(roomName, `game-status: Round-${rooms[roomName].round}`)
             server && server.in(roomName).emit('game-status', rooms[roomName].gameState)
         }
     }
@@ -170,7 +172,7 @@ const clearTimer = (roomName, clientId) => {
 
 const requestMove = (roomName, server, moveType) => {
     if (!rooms[roomName].finished) {
-        info(roomName, 'Requesting a move');
+        info(roomName, `Requesting a move`);
         setCurrentTurn(roomName, moveType);
         server.in(roomName).emit('request-move', { nextRound: rooms[roomName].round });
     }

@@ -18,8 +18,8 @@ function setupGames(io, socket) {
    * @returns 
    */
   const updateGameStateOnTimeout = (state, round) => {
-    const getRandomCard = state.availableCards[Math.floor(Math.random() * roomSize)];
-    state.move = { ...state.move, ...{ [round]: getRandomCard } };
+    // const getRandomCard = state.availableCards[Math.floor(Math.random() * roomSize)];
+    // state.move = { ...state.move, ...{ [round]: getRandomCard } };
     return state;
   }
 
