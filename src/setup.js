@@ -23,6 +23,7 @@ function setupGames(io, socket) {
    * @returns 
    */
   const updateGameStateOnTimeout = (state, round) => {
+    console.log('timeout',state);
     // const getRandomCard = state.availableCards[Math.floor(Math.random() * roomSize)];
     // state.move = { ...state.move, ...{ [round]: getRandomCard } };
     return state;
@@ -38,29 +39,29 @@ function setupGames(io, socket) {
     const clients = Object.keys(state);
     const roundWinner = getRoundWinner(state, clients, round, roundInfo);
     if (!state[clients[0]]['result']) {
-      state[clients[0]]['result'] = [];
+      state[clients[0]]['result'] = {};
     }
     if (!state[clients[1]]['result']) {
-      state[clients[1]]['result'] = [];
+      state[clients[1]]['result'] = {};
     }
     if (!roundWinner) {
       return false;
     } else if (roundWinner.length === 2) {
-      state[clients[0]]['result'].push('T');
-      state[clients[1]]['result'].push('T');
+      state[clients[0]]['result'][round] = 'T';
+      state[clients[1]]['result'][round] = 'T';
     } else {
       const anotherClient = clients.find(client => client !== roundWinner[0])
-      state[roundWinner[0]]['result'].push('W');
-      state[anotherClient]['result'].push('L');
+      state[roundWinner[0]]['result'][round] = 'W';
+      state[anotherClient]['result'][round] = 'L';
     }
     return getFinalWinner(state, clients[0], clients[1], round);
   }
 
   const getRoundWinner = (state, clients, round, roundInfo) => {
-    if (state[clients[0]]['move'] && state[clients[1]]['move'] && state[clients[0]]['move'][round] && state[clients[1]]['move'][round]) {
+    if (roundInfo && state[clients[0]]['move'] && state[clients[1]]['move'] && state[clients[0]]['move'][round] && state[clients[1]]['move'][round]) {
       if (getCardPropFromId(state[clients[0]]['move'][round], roundInfo) > getCardPropFromId(state[clients[1]]['move'][round], roundInfo)) {
         return [clients[0]]
-      } else if (getCardPropFromId(state[clients[0]]['move'][round]) < getCardPropFromId(state[clients[1]]['move'][round])) {
+      } else if (getCardPropFromId(state[clients[0]]['move'][round], roundInfo) < getCardPropFromId(state[clients[1]]['move'][round], roundInfo)) {
         return [clients[1]]
       } else {
         return clients;
@@ -79,8 +80,8 @@ function setupGames(io, socket) {
       state[client1]['move'][round] &&
       state[client1]['move'][round]
     ) {
-      const client1Result = state[client1].result.filter(round => round === 'W').length;
-      const client2Result = state[client2].result.filter(round => round === 'W').length;
+      const client1Result = Object.values(state[client1].result).filter(round => round === 'W').length;
+      const client2Result = Object.values(state[client2].result).filter(round => round === 'W').length;
       if(round === 2) {
         if(client1Result === 2) {
           return [client1];
@@ -104,9 +105,9 @@ function setupGames(io, socket) {
     const card = stats.find(player => String(player.TMID) === String(value));
     return card[Object.keys(roundInfo.question)[0]];
   }
-
+  
   const modifyRoundInfo = (roundInfo) => {
-    const random = Math.floor(Math.random()*13);
+    const random = Math.floor(Math.random()*12);
     const fields = Object.keys(cricketQuestions);
     const randomField = fields[random];
     roundInfo['question'] = {
@@ -122,7 +123,7 @@ function setupGames(io, socket) {
       updateGameStateOnTimeout,
       verifyWinState,
       modifyRoundInfo,
-      timePerRound: 30000,
+      timePerRound: 60000,
       moveType: 'ALL'
     }
   );

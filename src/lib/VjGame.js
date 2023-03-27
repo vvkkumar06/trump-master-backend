@@ -129,6 +129,8 @@ class VjGame {
      */
     joinRoom(roomId, args) {
         const { gameState, clientInfo } = args;
+        this.gameState = gameState;
+        this.clientInfo = clientInfo;
         let roomName = roomId.startsWith(this.name) ? roomId : `${this.name}-${roomId}`;
         this.client.join(roomName);
         initializePlayer(roomName, this.client.id, clientInfo);
@@ -168,7 +170,6 @@ class VjGame {
      */
     newGameHandler(args) {
         const roomsLength = this.getConnectedRoomsCount();
-        this.gameState = args;
         if (roomsLength) {
             const error = 'Already in another room';
             this.warn(error);
@@ -227,7 +228,7 @@ class VjGame {
         if(!gameState) {
             this.info(`Starting Game for Room: ${this.roomName}`);
         } else {
-            this.info(`New Move: ${this.roomName}, GameState: ${JSON.stringify(gameState)}`);
+            this.info(`New Move: ${this.roomName}`);
         }
         clearTimer(this.roomName, this.client.id);
         updateGameState(this.roomName, this.client.id, gameState ? gameState : this.gameState, this.server, this.verifyWinState);

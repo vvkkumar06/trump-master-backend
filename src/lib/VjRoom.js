@@ -37,7 +37,9 @@ function warn(roomName, message) {
  *             1: 45,
  *             2: 34
  *           },
- *           result: ['W']
+ *           result: {
+ *             1: 'W'
+ *           }
  *        }
  *        'sdfs33334455': { //}
  *      },
