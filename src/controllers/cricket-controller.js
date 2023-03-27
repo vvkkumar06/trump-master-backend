@@ -17,4 +17,9 @@ router.get('/stats', (req, res) =>{
   res.json(playersData)
 });
 
+router.get('/stats/:ClientPlayerID', (req, res) =>{ 
+  let data = playersData.find(player => player.ClientPlayerID === req.params.ClientPlayerID);
+  res.json(data)
+});
+
 module.exports = router;
