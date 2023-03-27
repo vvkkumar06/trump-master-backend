@@ -15,6 +15,10 @@ function info(roomName, message) {
 function warn(roomName, message) {
     logger.warning(`(Room: ${roomName}): ${message}`);
 }
+function infoW(roomName, message) {
+    logger.infoW(`(Room: ${roomName}): ${message}`);
+}
+
 
 /***
  * {
@@ -75,14 +79,13 @@ const updateGameState = (roomName, clientId, gameState, server, verifyWinState) 
     if (!rooms[roomName]['gameState']) {
         rooms[roomName]['gameState'] = {}
     }
-
-    rooms[roomName]['gameState'][clientId] = _.merge(rooms[roomName]['gameState'][clientId], gameState);
+    rooms[roomName]['gameState'][clientId] = { ...gameState, availableCards: gameState.availableCards, move: gameState.move };
     if (verifyWinState) {
         const winner = verifyWinState(rooms[roomName]['gameState'], rooms[roomName].round, rooms[roomName].roundInfo);
         if (winner) {
             rooms[roomName].finished = true;
             info(roomName, `game-status: Winner: - ${winner}`)
-            server && server.in(roomName).emit('game-status', {
+            server && server.in(roomName).emit('game-over', {
                 gameState: rooms[roomName].gameState,
                 winner: winner
             });
@@ -131,7 +134,7 @@ const getClientIdsFromTurn = (roomName) => {
     return [rooms[roomName]['players'][turn]];
 };
 
-const createTimer = ({roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState, modifyRoundInfo}) => {
+const createTimer = ({ roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState, modifyRoundInfo }) => {
     info(roomName, `Creating timer`);
     if (!roomsTimer[roomName]) {
         roomsTimer[roomName] = {};
@@ -140,21 +143,21 @@ const createTimer = ({roomName, server, timePerRound, updateGameStateOnTimeout, 
 
     currentTurnClients.forEach(clientId => {
         roomsTimer[roomName][clientId] = setTimeout(() => {
-            //Make timeout emit
-            info(roomName, `Client timeout - sending message to client`);
-            //Automate move from server
-            updateGameState(roomName,
-                clientId,
-                updateGameStateOnTimeout(
-                    getGameStateByClientId(roomName, clientId),
-                    rooms[roomName].round),
-                server,
-                verifyWinState
-            );
-            clearTimer(roomName, clientId);
             if (!isTimerRunning(roomName) && !rooms[roomName].finished) {
-                requestMove({roomName, server, moveType, modifyRoundInfo});
-                createTimer({roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState});
+                //Make timeout emit
+                info(roomName, `Client timeout - sending message to client`);
+                //Automate move from server
+                updateGameState(roomName,
+                    clientId,
+                    updateGameStateOnTimeout(
+                        getGameStateByClientId(roomName, clientId),
+                        rooms[roomName].round),
+                    server,
+                    verifyWinState
+                );
+                clearTimer(roomName, clientId);
+                requestMove({ roomName, server, moveType, modifyRoundInfo });
+                createTimer({ roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState });
             }
         }, timePerRound);
     })
@@ -173,12 +176,12 @@ const clearTimer = (roomName, clientId) => {
     }
 }
 
-const requestMove = ({roomName, server, moveType, modifyRoundInfo}) => {
+const requestMove = ({ roomName, server, moveType, modifyRoundInfo }) => {
     if (!rooms[roomName].finished) {
-        info(roomName, `Requesting a move`);
         setCurrentTurn(roomName, moveType);
         modifyRoundInfo && modifyRoundInfo(rooms[roomName].roundInfo);
-        const requestMovePayload = { nextRound: rooms[roomName].round, roundInfo: rooms[roomName].roundInfo};
+        const requestMovePayload = { nextRound: rooms[roomName].round, roundInfo: rooms[roomName].roundInfo };
+        infoW(roomName, `Requesting a move- Round: ${rooms[roomName].round}`);
         server.in(roomName).emit('request-move', requestMovePayload);
     }
 }

@@ -8,7 +8,7 @@ const cricketQuestions = {
     'Sixes': 'Sixes',
     'BBM': 'Best Bowling',
     'Econ': 'Economy',
-    'Wickets': 'Wicket',
+    'Wickets': 'Wickets',
     'Catches': 'Catches',
     "Stumpings": "Stumpings",
   }

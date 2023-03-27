@@ -194,7 +194,7 @@ class VjGame {
     * Game Over event
     */
     endGameHandler() {
-        info('(Server): cleaning room');
+        this.info('(Server): cleaning room');
         this.server.socketsLeave(this.getConnectedRooms());
     }
 
@@ -209,7 +209,7 @@ class VjGame {
     }
 
     starGameHandler(args, cb) {
-        if(!rooms[this.roomName]['loadedClients']) {
+        if(rooms[this.roomName] && !rooms[this.roomName]['loadedClients']) {
             rooms[this.roomName]['loadedClients'] = [];
         } 
         rooms[this.roomName]['loadedClients'].push(this.client.id);
