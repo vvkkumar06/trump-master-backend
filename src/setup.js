@@ -23,8 +23,9 @@ function setupGames(io, socket) {
    * @returns 
    */
   const updateGameStateOnTimeout = (state, round) => {
-    // const getRandomCard = state.availableCards[Math.floor(Math.random() * roomSize)];
-    // state.move = { ...state.move, ...{ [round]: getRandomCard } };
+    const cards = Object.keys(state.availableCards);
+    state.move = { ...state.move, [round]: state.availableCards[cards[0]] },
+      delete state.availableCards[cards[0]];
     return state;
   }
 
@@ -37,7 +38,6 @@ function setupGames(io, socket) {
   const verifyWinState = (state, round, roundInfo) => {
     const clients = Object.keys(state);
     const roundWinner = getRoundWinner(state, clients, round, roundInfo);
-    console.log('round winner-', roundWinner, roundInfo && roundInfo.question);
     if (!state[clients[0]]['result']) {
       state[clients[0]]['result'] = {};
     }
@@ -60,13 +60,10 @@ function setupGames(io, socket) {
   const getRoundWinner = (state, clients, round, roundInfo) => {
     if (roundInfo && roundInfo.question && state[clients[0]]['move'] && state[clients[1]]['move'] && state[clients[0]]['move'][round] && state[clients[1]]['move'][round]) {
       if (getScore(state[clients[0]]['move'][round], roundInfo) > getScore(state[clients[1]]['move'][round], roundInfo)) {
-        console.log(clients[0], ': ', getScore(state[clients[0]]['move'][round], getScore(state[clients[1]]['move'][round], roundInfo), roundInfo.question))
         return [clients[0]]
       } else if (getScore(state[clients[0]]['move'][round], roundInfo) < getScore(state[clients[1]]['move'][round], roundInfo)) {
-        console.log(clients[1], ': ', getScore(state[clients[0]]['move'][round], getScore(state[clients[1]]['move'][round], roundInfo), roundInfo.question))
         return [clients[1]]
       } else {
-        console.log(clients, ': ', getScore(state[clients[0]]['move'][round], getScore(state[clients[1]]['move'][round], roundInfo), roundInfo.question))
         return clients;
       }
     } else {
@@ -89,7 +86,7 @@ function setupGames(io, socket) {
         return [client1];
       } else if (client2Result === 2 || (round === 3 && client1Result < client2Result)) {
         return [client2];
-      } else if (round === 3 && client1Result === client2Result){
+      } else if (round === 3 && client1Result === client2Result) {
         return [client1, client2];
       } else {
         return undefined;
@@ -133,7 +130,7 @@ function setupGames(io, socket) {
       updateGameStateOnTimeout,
       verifyWinState,
       modifyRoundInfo,
-      timePerRound: 60000,
+      timePerRound: 20000,
       moveType: 'ALL'
     }
   );
