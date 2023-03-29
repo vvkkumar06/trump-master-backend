@@ -107,7 +107,7 @@ function setupGames(io, socket) {
       }
       const quesKey = Object.keys(roundInfo.question)[0];
       if (quesKey === 'Econ') {
-        return -score;
+        return score ? -score : -1000;
       }
       if (quesKey === 'HighestScore') {
         return score.replace('*', '');
