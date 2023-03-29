@@ -159,7 +159,7 @@ function setupGames(io, socket) {
       updateGameStateOnTimeout,
       verifyWinState,
       modifyRoundInfo,
-      timePerRound: 15000,
+      timePerRound: 35000,
       moveType: 'ALL'
     }
   );

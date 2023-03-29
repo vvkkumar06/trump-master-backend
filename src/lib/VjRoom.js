@@ -183,7 +183,7 @@ const requestMove = ({ roomName, server, moveType, modifyRoundInfo }) => {
         setCurrentTurn(roomName, moveType);
         modifyRoundInfo && modifyRoundInfo(rooms[roomName].gameState, rooms[roomName].roundInfo);
         const requestMovePayload = { nextRound: rooms[roomName].round, roundInfo: rooms[roomName].roundInfo };
-        infoW(roomName, `Requesting a move- Round: ${rooms[roomName].round}`);
+        info(roomName, `Requesting a move- Round: ${rooms[roomName].round}`);
         server.in(roomName).emit('request-move', requestMovePayload);
     }
 }
