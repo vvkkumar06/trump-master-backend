@@ -195,7 +195,7 @@ class VjGame {
     */
     endGameHandler() {
         this.info('(Server): cleaning room');
-        this.server.socketsLeave(this.getConnectedRooms());
+        this.server.socketsLeave([this.roomName]);
     }
 
     moveHandler(args, cb) {
@@ -213,7 +213,6 @@ class VjGame {
             rooms[this.roomName]['loadedClients'] = [];
         } 
         rooms[this.roomName]['loadedClients'].push(this.client.id);
-
         if(rooms[this.roomName]['loadedClients'].length === this.roomSize) {
             this._startGame();
         }

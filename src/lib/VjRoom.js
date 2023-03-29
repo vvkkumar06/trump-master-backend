@@ -144,21 +144,21 @@ const createTimer = ({ roomName, server, timePerRound, updateGameStateOnTimeout,
     currentTurnClients.forEach(clientId => {
         roomsTimer[roomName][clientId] = setTimeout(() => {
             clearTimer(roomName, clientId);
+            //Make timeout emit
+            info(roomName, `Client timeout - Doing auto move`);
+            //Automate move from server
+            updateGameState(roomName,
+                clientId,
+                updateGameStateOnTimeout(
+                    getGameStateByClientId(roomName, clientId), clientId,
+                    rooms[roomName].round, rooms[roomName].roundInfo),
+                server,
+                verifyWinState
+            );
             if (!rooms[roomName].finished) {
-                 //Make timeout emit
-                 info(roomName, `Client timeout - Doing auto move`);
-                 //Automate move from server
-                 updateGameState(roomName,
-                     clientId,
-                     updateGameStateOnTimeout(
-                         getGameStateByClientId(roomName, clientId), clientId,
-                         rooms[roomName].round, rooms[roomName].roundInfo),
-                     server,
-                     verifyWinState
-                 );
                 if (!isTimerRunning(roomName)) {
                     requestMove({ roomName, server, moveType, modifyRoundInfo });
-                    createTimer({ roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState });
+                    createTimer({ roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState, modifyRoundInfo });
                 }
             }
         }, timePerRound);

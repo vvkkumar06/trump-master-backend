@@ -4,8 +4,9 @@ const { cricketQuestions } = require('./data/cricket-metadata');
 const stats = require('./assets/cricket/players/stats/cricket-players');
 
 //TODO
-// Find out best pick at the time of request move
-// appennd data in round info
+// 3rd round auto move game never stops issue
+// Economy undefined is greater than any issue
+// unable to restart game from client once game finished
 
 function setupGames(io, socket) {
 
@@ -25,7 +26,6 @@ function setupGames(io, socket) {
    * @returns 
    */
   const updateGameStateOnTimeout = (state, clientId, round, roundInfo) => {
-    const cards = Object.keys(state.availableCards);
     const recommendedMove = roundInfo.recommendedMove;
     state.move = { ...state.move, [round]: state.availableCards[recommendedMove[clientId]] };
     delete state.availableCards[recommendedMove[clientId]];
@@ -102,6 +102,9 @@ function setupGames(io, socket) {
     const card = stats.find(player => String(player.TMID) === String(tmId));
     if (roundInfo.question) {
       let score = card[Object.keys(roundInfo.question)[0]];
+      if(!score) {
+        score = '';
+      }
       const quesKey = Object.keys(roundInfo.question)[0];
       if (quesKey === 'Econ') {
         return -score;
@@ -111,7 +114,7 @@ function setupGames(io, socket) {
       }
       if (quesKey === 'BBM') {
         const wr = score.split('/');
-        return wr[0] - wr[1];
+        return wr[0] ? wr[0]*1000 : 0 - wr[1] ? wr[1] : 0;
       }
       return Number(score);
     }
@@ -156,7 +159,7 @@ function setupGames(io, socket) {
       updateGameStateOnTimeout,
       verifyWinState,
       modifyRoundInfo,
-      timePerRound: 40000,
+      timePerRound: 15000,
       moveType: 'ALL'
     }
   );
