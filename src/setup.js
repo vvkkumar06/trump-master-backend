@@ -3,7 +3,9 @@ const logger = require('./lib/logger');
 const { cricketQuestions } = require('./data/cricket-metadata');
 const stats = require('./assets/cricket/players/stats/cricket-players');
 
-
+//TODO
+// Find out best pick at the time of request move
+// appennd data in round info
 
 function setupGames(io, socket) {
 
@@ -22,10 +24,11 @@ function setupGames(io, socket) {
    * @param {*} round round for which it got timed out
    * @returns 
    */
-  const updateGameStateOnTimeout = (state, round) => {
+  const updateGameStateOnTimeout = (state, clientId, round, roundInfo) => {
     const cards = Object.keys(state.availableCards);
-    state.move = { ...state.move, [round]: state.availableCards[cards[0]] },
-      delete state.availableCards[cards[0]];
+    const recommendedMove = roundInfo.recommendedMove;
+    state.move = { ...state.move, [round]: state.availableCards[recommendedMove[clientId]] };
+    delete state.availableCards[recommendedMove[clientId]];
     return state;
   }
 
@@ -95,8 +98,8 @@ function setupGames(io, socket) {
     return undefined;
   }
 
-  const getScore = (value, roundInfo) => {
-    const card = stats.find(player => String(player.TMID) === String(value));
+  const getScore = (tmId, roundInfo) => {
+    const card = stats.find(player => String(player.TMID) === String(tmId));
     if (roundInfo.question) {
       let score = card[Object.keys(roundInfo.question)[0]];
       const quesKey = Object.keys(roundInfo.question)[0];
@@ -114,23 +117,46 @@ function setupGames(io, socket) {
     }
   }
 
-  const modifyRoundInfo = (roundInfo) => {
+  const modifyRoundInfo = (state, roundInfo) => {
     const random = Math.floor(Math.random() * 12);
     const fields = Object.keys(cricketQuestions);
     const randomField = fields[random];
     roundInfo['question'] = {
       [randomField]: cricketQuestions[randomField]
     }
+    updateRecommendedMove(state, roundInfo)
   }
 
-  const cricketGame = new VjGame(io, socket,
+  const updateRecommendedMove = (state, roundInfo) => {
+    const clientIds = Object.keys(state);
+    const recommendedMove = {};
+    for(let id of clientIds) {
+      const cards = state[id].availableCards;
+      //flip object and covert tmid to score
+      //check for max score
+      let maxScore = -1000;
+      const flipped = flipObject(cards, (tmid) => { 
+         let score = getScore(tmid, roundInfo);
+         if(score > maxScore) {
+          maxScore = score;
+         }
+         return getScore(tmid, roundInfo)
+      });
+      recommendedMove[id] = flipped[maxScore];
+    }
+    roundInfo['recommendedMove'] = recommendedMove;
+  }
+
+  const flipObject = (obj, valueModifier) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [valueModifier ? valueModifier(value) : value, key]));
+
+  new VjGame(io, socket,
     {
       roomSize: 2,
       name: 'cricket',
       updateGameStateOnTimeout,
       verifyWinState,
       modifyRoundInfo,
-      timePerRound: 20000,
+      timePerRound: 40000,
       moveType: 'ALL'
     }
   );
