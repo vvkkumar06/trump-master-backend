@@ -1,5 +1,5 @@
 const logger = require('./logger');
-const { updateGameState, initializePlayer, MOVE_TYPE, clearTimer, requestMove, createTimer, isTimerRunning, rooms } = require('./VjRoom');
+const { updateGameState, initializePlayer, MOVE_TYPE, clearTimer, requestMove, createTimer, isTimerRunning, rooms, closeRoom } = require('./VjRoom');
 
 class VjGame {
     _defaultOptions = {
@@ -196,6 +196,7 @@ class VjGame {
     endGameHandler() {
         this.info('(Server): cleaning room');
         this.server.socketsLeave([this.roomName]);
+        closeRoom(this.roomName, this.server);
     }
 
     moveHandler(args, cb) {
@@ -213,6 +214,7 @@ class VjGame {
             rooms[this.roomName]['loadedClients'] = [];
         } 
         rooms[this.roomName]['loadedClients'].push(this.client.id);
+        console.log('start game',  rooms, this.roomName, rooms[this.roomName], rooms[this.roomName]['loadedClients'], this.roomSize)
         if(rooms[this.roomName]['loadedClients'].length === this.roomSize) {
             this._startGame();
         }
