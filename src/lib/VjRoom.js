@@ -154,7 +154,7 @@ const createTimer = ({ roomName, server, timePerRound, updateGameStateOnTimeout,
                     server,
                     verifyWinState
                 );
-                if (!rooms[roomName].finished) {
+                if (rooms[roomName] && !rooms[roomName].finished) {
                     if (!isTimerRunning(roomName)) {
                         requestMove({ roomName, server, moveType, modifyRoundInfo });
                         createTimer({ roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState, modifyRoundInfo });

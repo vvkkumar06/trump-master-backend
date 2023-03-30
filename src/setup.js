@@ -3,10 +3,6 @@ const logger = require('./lib/logger');
 const { cricketQuestions } = require('./data/cricket-metadata');
 const stats = require('./assets/cricket/players/stats/cricket-players');
 
-//TODO
-// 3rd round auto move game never stops issue
-// Economy undefined is greater than any issue
-// unable to restart game from client once game finished
 
 function setupGames(io, socket) {
 
