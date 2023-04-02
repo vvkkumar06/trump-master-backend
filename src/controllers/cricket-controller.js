@@ -4,12 +4,16 @@
 
 const router = require('express').Router();
 const _ = require('lodash');
-const db = require('./../data/db');
+// const db = require('./../data/db');
 const playersData = require('./../assets/cricket/players/stats/cricket-players');
+const { authenticateJWT } = require('./../middlewares/authenticate-jwt');
+const { getUser } = require('./../services/user-service');
 
 
-router.get('/collection', (req, res) =>{ 
-  res.json(db())
+router.get('/collection', authenticateJWT,  async (req, res) => { 
+  const user = await getUser(req.user.id);
+  const cricketCollection = user.games.cricket;
+  res.json(cricketCollection)
 });
 
 
