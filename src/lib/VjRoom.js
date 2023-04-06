@@ -73,7 +73,7 @@ const initializePlayer = (roomName, clientId, clientInfo) => {
 const getGameStateByClientId = (roomName, clientId) => rooms[roomName]['gameState'][clientId];
 
 
-const updateGameState = (roomName, clientId, gameState, server, verifyWinState) => {
+const updateGameState = (roomName, clientId, gameState, server, verifyWinState, postGameTime) => {
 
     info(roomName, `Updating game state`);
     if (!rooms[roomName]['gameState']) {
@@ -81,16 +81,21 @@ const updateGameState = (roomName, clientId, gameState, server, verifyWinState) 
     }
     rooms[roomName]['gameState'][clientId] = { ...gameState, availableCards: gameState.availableCards, move: gameState.move };
     if (verifyWinState) {
-        const winner = verifyWinState(rooms[roomName]['gameState'], rooms[roomName].round, rooms[roomName].roundInfo);
-        if (winner) {
+        const winnerData = verifyWinState(rooms[roomName]['gameState'], rooms[roomName].round, rooms[roomName].roundInfo, rooms[roomName]['players']);
+        if (winnerData) {
             rooms[roomName].finished = true;
-            info(roomName, `game-status: Winner: - ${winner}`)
+            info(roomName, `game-status: Winner: - ${winnerData.winner}`)
             server && server.in(roomName).emit('game-over', {
                 gameState: rooms[roomName].gameState,
-                winner: winner
+                winner: winnerData.winner,
+                postGameData: winnerData.postGameData
             });
-
-            closeRoom(roomName, server);
+            if(!roomsTimer[roomName]['postGame']) {
+                roomsTimer[roomName]['postGame'] = setTimeout(() => {
+                    info(roomName, 'Post game processing');
+                    closeRoom(roomName, server);
+                }, postGameTime);
+            }
         } else {
             info(roomName, `game-status: Round-${rooms[roomName].round}`)
             server && server.in(roomName).emit('game-status', rooms[roomName].gameState)
@@ -132,7 +137,7 @@ const getClientIdsFromTurn = (roomName) => {
     return [rooms[roomName]['players'][turn]];
 };
 
-const createTimer = ({ roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState, modifyRoundInfo }) => {
+const createTimer = ({ roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState, modifyRoundInfo, postGameTime }) => {
     if(rooms[roomName]) {
         info(roomName, `Creating timer`);
         if (!roomsTimer[roomName]) {
@@ -152,12 +157,13 @@ const createTimer = ({ roomName, server, timePerRound, updateGameStateOnTimeout,
                         getGameStateByClientId(roomName, clientId), clientId,
                         rooms[roomName].round, rooms[roomName].roundInfo),
                     server,
-                    verifyWinState
+                    verifyWinState,
+                    postGameTime
                 );
                 if (rooms[roomName] && !rooms[roomName].finished) {
                     if (!isTimerRunning(roomName)) {
                         requestMove({ roomName, server, moveType, modifyRoundInfo });
-                        createTimer({ roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState, modifyRoundInfo });
+                        createTimer({ roomName, server, timePerRound, updateGameStateOnTimeout, moveType, verifyWinState, modifyRoundInfo, postGameTime });
                     }
                 }
             }, timePerRound);

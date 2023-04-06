@@ -8,7 +8,9 @@ class VjGame {
         customEvents: {},
         updateGameStateOnTimeout: () => { },
         verifyWinState: () => { },
-        modifyRoundInfo: () => { }, // hook to be called before every request for move
+        modifyRoundInfo: () => { }, // hook to be called before every request for move,
+        postGameCallback: () => {},
+        postGameTime: 5000,
         moveType: MOVE_TYPE.ALTERNATE,
         timePerRound: 10000
     }
@@ -24,6 +26,8 @@ class VjGame {
         this.moveType = options.moveType;
         this.timePerRound = options.timePerRound;
         this.modifyRoundInfo = options.modifyRoundInfo;
+        this.postGameCallback = options.postGameCallback;
+        this.postGameTime = options.postGameTime;
 
         //Will be set once game starts
         this.roomName = undefined;
@@ -46,6 +50,7 @@ class VjGame {
         this.client.on('end-game', (args, cb) => this.endGameHandler(args, cb));
         this.client.on('move', (args, cb) => this.moveHandler(args, cb));
         this.client.on('start-game', (args, cb) => this.starGameHandler(args, cb));
+        this.client.on('post-game', (args, cb) => this.postGameCallback(args, rooms[this.roomName], cb))
         this.client.on('disconnect', () => this.disconnectHandler());
         for (let eventName in this.customEvents) {
             this.info('Setting up custom events');
@@ -233,7 +238,7 @@ class VjGame {
             this.info(`New Move: ${this.roomName}`);
         }
         clearTimer(this.roomName, this.client.id);
-        updateGameState(this.roomName, this.client.id, gameState ? gameState : this.gameState, this.server, this.verifyWinState);
+        updateGameState(this.roomName, this.client.id, gameState ? gameState : this.gameState, this.server, this.verifyWinState, this.postGameTime);
         if (!isTimerRunning(this.roomName)) {
             requestMove(this);
             createTimer(this);
