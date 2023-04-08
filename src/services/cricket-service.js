@@ -1,5 +1,3 @@
-const { db } = require('./firebase/initialize');
-
 const getInitialCricketCards = () => {
     let backupCards = {};
     for (let i = 0; i < 5; i++) {
@@ -8,7 +6,6 @@ const getInitialCricketCards = () => {
     }
     return { backupCards, playingCards: {} };
 }
-
 
 module.exports = {
     getInitialCricketCards

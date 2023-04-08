@@ -17,11 +17,6 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
-//Cricket Player Images
-app.use('/images/cricket-players',express.static(path.resolve(__dirname, 'assets/cricket/players/images')));
-app.use('/data/cricket/player-stats',express.static(path.resolve(__dirname, 'assets/cricket/players/stats')))
-
-
 //routes
 app.use('/api/auth', authRouter);
 app.use('/api/user', userRouter);
@@ -43,4 +38,4 @@ io.on('connection', (socket) => {
   setupGames(io, socket);
 });
 
-httpServer.listen(8080);
+httpServer.listen(process.env.PORT || 8080);
