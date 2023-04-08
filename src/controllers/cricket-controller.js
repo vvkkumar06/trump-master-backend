@@ -4,10 +4,9 @@
 
 const router = require('express').Router();
 const _ = require('lodash');
-// const db = require('./../data/db');
-const playersData = require('./../assets/cricket/players/stats/cricket-players');
 const { authenticateJWT } = require('./../middlewares/authenticate-jwt');
 const { getUser } = require('./../services/user-service');
+const { getCricketStats } = require('./../services/cricket-service');
 
 
 router.get('/collection', authenticateJWT,  async (req, res) => { 
@@ -17,13 +16,10 @@ router.get('/collection', authenticateJWT,  async (req, res) => {
 });
 
 
-router.get('/stats', (req, res) =>{ 
-  res.json(playersData)
+router.get('/stats', async(req, res) =>{ 
+  const stats = await getCricketStats();
+  res.json(stats)
 });
 
-router.get('/stats/:ClientPlayerID', (req, res) =>{ 
-  let data = playersData.find(player => player.ClientPlayerID === req.params.ClientPlayerID);
-  res.json(data)
-});
 
 module.exports = router;

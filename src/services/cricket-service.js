@@ -9,7 +9,19 @@ const getInitialCricketCards = () => {
     return { backupCards, playingCards: {} };
 }
 
+const getCricketStats = async () => {
+    let data = [];
+    try {
+        let snapshots = await db.collection('cricket-stats').get();
+        data = snapshots.docs.map(item => item.data());
+    } catch (err) {
+        console.log('Unable to fetch stats - ', err);
+    }
+    return data;
+}
+
 
 module.exports = {
-    getInitialCricketCards
+    getInitialCricketCards,
+    getCricketStats
 }
