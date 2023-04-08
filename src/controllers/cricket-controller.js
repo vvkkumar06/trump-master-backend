@@ -6,7 +6,7 @@ const router = require('express').Router();
 const _ = require('lodash');
 const { authenticateJWT } = require('./../middlewares/authenticate-jwt');
 const { getUser } = require('./../services/user-service');
-const { getCricketStats } = require('./../services/cricket-service');
+const { getCricketStats } = require('./../services/firebase/initialize');
 
 
 router.get('/collection', authenticateJWT,  async (req, res) => { 
