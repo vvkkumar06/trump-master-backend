@@ -90,9 +90,9 @@ const updateGameState = (roomName, clientId, gameState, server, verifyWinState, 
                 winner: winnerData.winner,
                 postGameData: winnerData.postGameData
             });
+            info(roomName, 'Post game processing');
             if(!roomsTimer[roomName]['postGame']) {
                 roomsTimer[roomName]['postGame'] = setTimeout(() => {
-                    info(roomName, 'Post game processing');
                     closeRoom(roomName, server);
                 }, postGameTime);
             }

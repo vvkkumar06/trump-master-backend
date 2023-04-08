@@ -3,6 +3,7 @@ const logger = require('./lib/logger');
 const { cricketQuestions } = require('./data/cricket-metadata');
 const stats = require('./assets/cricket/players/stats/cricket-players');
 const {generateShuffleData } = require('./helpers/card-shuffle');
+const { updateGameCricket } = require('./services/user-service');
 
 
 function setupGames(io, socket) {
@@ -163,8 +164,17 @@ function setupGames(io, socket) {
     roundInfo['recommendedMove'] = recommendedMove;
   }
 
-  const postGameCallback = (args, roomData, cb) => {
-    console.log('processing post call');
+  const gameResultSync = async (args, players, callback) => {
+    const {pickedCardName: cardName, winner, loser } = args;
+    if(cardName) {
+      const winnerInfo = Object.values(players).find(player => player.clientId === winner).clientInfo;
+      const loserInfo = Object.values(players).find(player => player.clientId === loser).clientInfo;
+      io.to(loser).emit('card-removed', { removedCard: cardName})
+      await updateGameCricket(winnerInfo, loserInfo, cardName);
+      callback && callback();
+    } else {
+      callback && callback('Something went wrong');
+    }
   }
  
   const flipObject = (obj, valueModifier) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [valueModifier ? valueModifier(value) : value, key]));
@@ -176,7 +186,7 @@ function setupGames(io, socket) {
       updateGameStateOnTimeout,
       verifyWinState,
       modifyRoundInfo,
-      postGameCallback,
+      gameResultSync,
       postGameTime: 20000,
       timePerRound: 35000,
       moveType: 'ALL'

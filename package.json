@@ -17,6 +17,8 @@
     "nodemon": "^2.0.21"
   },
   "dependencies": {
+    "@google-cloud/storage": "^6.9.5",
+    "firebase": "^9.19.1",
     "firebase-admin": "^11.5.0",
     "google-auth-library": "^8.7.0",
     "jsonwebtoken": "^9.0.0",

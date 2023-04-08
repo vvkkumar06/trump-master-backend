@@ -9,7 +9,7 @@ class VjGame {
         updateGameStateOnTimeout: () => { },
         verifyWinState: () => { },
         modifyRoundInfo: () => { }, // hook to be called before every request for move,
-        postGameCallback: () => {},
+        gameResultSync: () => { },
         postGameTime: 5000,
         moveType: MOVE_TYPE.ALTERNATE,
         timePerRound: 10000
@@ -26,7 +26,7 @@ class VjGame {
         this.moveType = options.moveType;
         this.timePerRound = options.timePerRound;
         this.modifyRoundInfo = options.modifyRoundInfo;
-        this.postGameCallback = options.postGameCallback;
+        this.gameResultSync = options.gameResultSync;
         this.postGameTime = options.postGameTime;
 
         //Will be set once game starts
@@ -50,7 +50,6 @@ class VjGame {
         this.client.on('end-game', (args, cb) => this.endGameHandler(args, cb));
         this.client.on('move', (args, cb) => this.moveHandler(args, cb));
         this.client.on('start-game', (args, cb) => this.starGameHandler(args, cb));
-        this.client.on('post-game', (args, cb) => this.postGameCallback(args, rooms[this.roomName], cb))
         this.client.on('disconnect', () => this.disconnectHandler());
         for (let eventName in this.customEvents) {
             this.info('Setting up custom events');
@@ -198,10 +197,13 @@ class VjGame {
     /**
     * Game Over event
     */
-    endGameHandler() {
+    endGameHandler(args, cb) {
         this.info('(Server): cleaning room');
-        this.server.socketsLeave([this.roomName]);
-        closeRoom(this.roomName, this.server);
+        this.gameResultSync(args, rooms[this.roomName]['players'], () => {
+            this.server.in(this.roomName).emit('post-processing-done')
+            this.server.socketsLeave([this.roomName]);
+            closeRoom(this.roomName, this.server);
+        })
     }
 
     moveHandler(args, cb) {
