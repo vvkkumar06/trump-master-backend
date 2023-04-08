@@ -2,6 +2,8 @@ const { VjGame } = require("./lib/VjGame");
 const logger = require('./lib/logger');
 const { cricketQuestions } = require('./data/cricket-metadata');
 const stats = require('./assets/cricket/players/stats/cricket-players');
+const {generateShuffleData } = require('./helpers/card-shuffle');
+const { updateGameCricket } = require('./services/user-service');
 
 
 function setupGames(io, socket) {
@@ -34,7 +36,7 @@ function setupGames(io, socket) {
    * @param {*} round Current Round
    * @returns Return clients array if it is final winner otherwise return undefined or false
    */
-  const verifyWinState = (state, round, roundInfo) => {
+  const verifyWinState = (state, round, roundInfo, playersInfo) => {
     const clients = Object.keys(state);
     const roundWinner = getRoundWinner(state, clients, round, roundInfo);
     if (!state[clients[0]]['result']) {
@@ -53,7 +55,7 @@ function setupGames(io, socket) {
       state[roundWinner[0]]['result'][round] = 'W';
       state[anotherClient]['result'][round] = 'L';
     }
-    return getFinalWinner(state, clients[0], clients[1], round);
+    return getFinalWinner(state, clients[0], clients[1], round, playersInfo);
   }
 
   const getRoundWinner = (state, clients, round, roundInfo) => {
@@ -70,7 +72,7 @@ function setupGames(io, socket) {
     }
   }
 
-  const getFinalWinner = (state, client1, client2, round) => {
+  const getFinalWinner = (state, client1, client2, round, playersInfo) => {
     if (round <= 3 && round > 1 &&
       state[client1].result &&
       state[client2].result &&
@@ -82,9 +84,25 @@ function setupGames(io, socket) {
       const client1Result = Object.values(state[client1].result).filter(round => round === 'W').length;
       const client2Result = Object.values(state[client2].result).filter(round => round === 'W').length;
       if (client1Result === 2 || (round === 3 && client1Result > client2Result)) {
-        return [client1];
+        const client2Info = Object.values(playersInfo).find(player => player.clientId === client2);
+        const teamCards = client2Info.clientInfo.teamCards;
+        return {
+          winner: [client1],
+          postGameData: {
+            lostPlayerCards: teamCards,
+            shuffleData: generateShuffleData(Object.values(teamCards).length)
+          }
+        }
       } else if (client2Result === 2 || (round === 3 && client1Result < client2Result)) {
-        return [client2];
+        const client1Info = Object.values(playersInfo).find(player => player.clientId === client1);
+        const teamCards = client1Info.clientInfo.teamCards;
+        return {
+          winner: [client2],
+          postGameData: {
+            lostPlayerCards: teamCards,
+            shuffleData: generateShuffleData(Object.values(teamCards).length)
+          }
+        }
       } else if (round === 3 && client1Result === client2Result) {
         return [client1, client2];
       } else {
@@ -146,6 +164,19 @@ function setupGames(io, socket) {
     roundInfo['recommendedMove'] = recommendedMove;
   }
 
+  const gameResultSync = async (args, players, callback) => {
+    const {pickedCardName: cardName, winner, loser } = args;
+    if(cardName) {
+      const winnerInfo = Object.values(players).find(player => player.clientId === winner).clientInfo;
+      const loserInfo = Object.values(players).find(player => player.clientId === loser).clientInfo;
+      io.to(loser).emit('card-removed', { removedCard: cardName})
+      await updateGameCricket(winnerInfo, loserInfo, cardName);
+      callback && callback();
+    } else {
+      callback && callback('Something went wrong');
+    }
+  }
+ 
   const flipObject = (obj, valueModifier) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [valueModifier ? valueModifier(value) : value, key]));
 
   new VjGame(io, socket,
@@ -155,6 +186,8 @@ function setupGames(io, socket) {
       updateGameStateOnTimeout,
       verifyWinState,
       modifyRoundInfo,
+      gameResultSync,
+      postGameTime: 20000,
       timePerRound: 35000,
       moveType: 'ALL'
     }

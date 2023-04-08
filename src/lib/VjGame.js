@@ -7,8 +7,10 @@ class VjGame {
         roomSize: 2,
         customEvents: {},
         updateGameStateOnTimeout: () => { },
-        verifyWinState: () => {},
-        modifyRoundInfo: () => {}, // hook to be called before every request for move
+        verifyWinState: () => { },
+        modifyRoundInfo: () => { }, // hook to be called before every request for move,
+        gameResultSync: () => { },
+        postGameTime: 5000,
         moveType: MOVE_TYPE.ALTERNATE,
         timePerRound: 10000
     }
@@ -24,6 +26,8 @@ class VjGame {
         this.moveType = options.moveType;
         this.timePerRound = options.timePerRound;
         this.modifyRoundInfo = options.modifyRoundInfo;
+        this.gameResultSync = options.gameResultSync;
+        this.postGameTime = options.postGameTime;
 
         //Will be set once game starts
         this.roomName = undefined;
@@ -173,7 +177,7 @@ class VjGame {
         if (roomsLength) {
             const error = 'Already in another room';
             this.warn(error);
-            this.client.emit('show-preload', {error});
+            this.client.emit('show-preload', { error });
         } else {
             let roomName = this.getWaitingRoom();
             if (roomName) {
@@ -193,10 +197,13 @@ class VjGame {
     /**
     * Game Over event
     */
-    endGameHandler() {
+    endGameHandler(args, cb) {
         this.info('(Server): cleaning room');
-        this.server.socketsLeave([this.roomName]);
-        closeRoom(this.roomName, this.server);
+        this.gameResultSync(args, rooms[this.roomName]['players'], () => {
+            this.server.in(this.roomName).emit('post-processing-done')
+            this.server.socketsLeave([this.roomName]);
+            closeRoom(this.roomName, this.server);
+        })
     }
 
     moveHandler(args, cb) {
@@ -210,12 +217,14 @@ class VjGame {
     }
 
     starGameHandler(args, cb) {
-        if(rooms[this.roomName] && !rooms[this.roomName]['loadedClients']) {
-            rooms[this.roomName]['loadedClients'] = [];
-        } 
-        rooms[this.roomName] && rooms[this.roomName]['loadedClients'].push(this.client.id);
-        if(rooms[this.roomName]['loadedClients'].length === this.roomSize) {
-            this._startGame();
+        if (rooms[this.roomName]) {
+            if (!rooms[this.roomName]['loadedClients']) {
+                rooms[this.roomName]['loadedClients'] = [];
+            }
+            rooms[this.roomName]['loadedClients'].push(this.client.id);
+            if (rooms[this.roomName]['loadedClients'].length === this.roomSize) {
+                this._startGame();
+            }
         }
     }
 
@@ -225,17 +234,17 @@ class VjGame {
         this.server.in(roomName).emit('load-game', rooms[roomName]);
     }
     _startGame = (gameState) => {
-        if(!gameState) {
+        if (!gameState) {
             this.info(`Starting Game for Room: ${this.roomName}`);
         } else {
             this.info(`New Move: ${this.roomName}`);
         }
         clearTimer(this.roomName, this.client.id);
-        updateGameState(this.roomName, this.client.id, gameState ? gameState : this.gameState, this.server, this.verifyWinState);
-        if(!isTimerRunning(this.roomName)) {
+        updateGameState(this.roomName, this.client.id, gameState ? gameState : this.gameState, this.server, this.verifyWinState, this.postGameTime);
+        if (!isTimerRunning(this.roomName)) {
             requestMove(this);
             createTimer(this);
-        }  
+        }
     }
 }
 

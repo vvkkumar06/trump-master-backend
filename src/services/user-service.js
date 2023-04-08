@@ -29,12 +29,50 @@ const getUser = async (id) => {
     return doc ? doc.data() : undefined;
 }
 
+const updateUserCricketState = async (id, gameState) => {
+    try {
+        await db.collection('users').doc(id).update({
+            'games.cricket' : {
+                backupCards: gameState.backupCards,
+                playingCards: gameState.playingCards
+            }
+        });
+    } catch (err) {
+        console.log('Unable to save user - ', id);
+    }
+}
 
-const updateUser = () => {
+
+const updateGameCricket = async (winner, loser, cardName) => {
+    let loserCards = loser.teamCards;
+    let winnerCardId = loserCards[cardName];
+    delete loserCards[cardName];
+    try {
+
+        await db.collection('users').doc(loser.id).update({
+            'games.cricket.playingCards': loserCards
+        })
+        const winUser = await getUser(winner.id);
+        const backupCards = winUser.games.cricket.backupCards;
+        if(backupCards[winnerCardId]){
+            backupCards[winnerCardId].count = backupCards[winnerCardId].count + 1;
+        } else {
+            backupCards[winnerCardId] = {
+                count: 1
+            }
+        }
+        await db.collection('users').doc(winner.id).update({
+            'games.cricket.backupCards': backupCards
+        })
+    } catch(error) {
+        console.log('Unable to update game state:', error);
+    }
 
 }
 
 module.exports = {
     createUserIfNotExists,
-    getUser
+    getUser,
+    updateGameCricket,
+    updateUserCricketState
 }
